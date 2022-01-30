@@ -10,8 +10,7 @@ function getApiUrl() {
   const pageId = "1303305384";
   const tq = "select E, F, G";
   const url = `https://docs.google.com/spreadsheets/d/${documentId}/gviz/tq?tqx=out:json;responseHandler:${callbackname}&tq=${tq}&gid=${pageId}`;
-  const encodedUrl = encodeURIComponent(url);
-  return `https://api.allorigins.win/get?url=${encodedUrl}`;
+  return url;
 }
 
 function googleSheetJsonParseCallback(data: any) {
@@ -19,10 +18,9 @@ function googleSheetJsonParseCallback(data: any) {
 }
 
 function convertToJson(data) {
-  const outerJson = JSON.parse(data);
-  const contents = outerJson.contents;
-  const index = contents.indexOf(callbackname);
-  const functionCall = contents.slice(index);
+  const index = data.indexOf(callbackname);
+  const functionCall = data.slice(index);
+  console.log(functionCall);
   return eval(functionCall);
 }
 
@@ -100,9 +98,10 @@ export const handler: Handler = async (event, context) => {
       body: JSON.stringify(servers),
     };
   } catch (e) {
+    console.log(e);
     return {
       statusCode: 500,
-      body: e,
+      body: JSON.stringify(e),
     };
   }
 };

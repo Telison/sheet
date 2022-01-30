@@ -76,6 +76,7 @@
         .catch((error) => displayError(error));
 
       function generateHtml(servers) {
+        console.log(servers);
         var html = "";
         for (const server of servers) {
           html = html + generateServerHtml(server);
