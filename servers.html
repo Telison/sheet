@@ -1,152 +1,183 @@
 <html>
-
-<head>
-    <title>Lost Ark EU servers</title>
-    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+  <head>
+    <title>Lost Ark European Servers</title>
+    <link
+      href="http://fonts.googleapis.com/css?family=Lato:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
     <style>
-        html,
-        body {
-            font-family: 'Lato', sans-serif;
-            color: #ddd;
-            background: #202020;
-            padding: 0;
-            margin: 0;
-        }
+      html,
+      body {
+        font-family: Lato, Sans-Serif;
+        color: #ddd;
+        background: #202020;
+        padding: 20px;
+        margin: 0;
+      }
 
-        #content {
-            display: flex;
-            flex-flow: row wrap;
-            padding: 20px;
-        }
+      h1 {
+        margin-top: 0;
+        margin-bottom: 30px;
+      }
 
-        .server-container {
-            margin: 0 20px 20px 0;
-            border-radius: 6px;
-            padding: 12px;
-            background: #303030;
-        }
+      #content {
+        display: flex;
+        flex-flow: row wrap;
+      }
 
-        .server-name {
-            font-size: 20px;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
+      .server-container {
+        margin: 0 20px 20px 0;
+        border-radius: 6px;
+        padding: 12px;
+        background: #303030;
+      }
 
-        .language-container {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 2px;
-        }
+      .server-name {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 14px;
+        color: white;
+      }
 
-        .language-name {
-            margin-right: 20px;
-        }
+      .language-container {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 3px;
+      }
+
+      .language-name {
+        margin-right: 20px;
+      }
+
+      #error {
+        color: #dd7070;
+      }
     </style>
     <script>
+      const documentId = "1wJiDGy77tOdV7ATqXj-bGXH7JmQo-sbjHrYJTcoI4Ow";
+      const pageId = "1303305384";
+      const callbackname = "callback";
+      const tq = "select E, F, G";
+      const url = `https://docs.google.com/spreadsheets/d/${documentId}/gviz/tq?tqx=out:json;responseHandler:${callbackname}&tq=${tq}&gid=${pageId}`;
+      const encodedUrl = encodeURIComponent(url);
+      const apiUrl = `https://api.allorigins.win/get?url=${encodedUrl}`;
 
-        const id = '1wJiDGy77tOdV7ATqXj-bGXH7JmQo-sbjHrYJTcoI4Ow';
-        const gid = '1303305384';
-        const callbackname = 'callback';
-        const tq = 'select E, F, G';
-        const url = `https://docs.google.com/spreadsheets/d/${id}/gviz/tq?tqx=out:json;responseHandler:${callbackname}&tq=${tq}&gid=${gid}`;
-        const encodedUrl = encodeURIComponent(url);
-        const apiUrl = 'https://api.allorigins.win/get?url=' + encodedUrl;
+      fetch(apiUrl)
+        .then((response) => response.text())
+        .then((responseText) => convertToJson(responseText))
+        .then((json) => parse(json))
+        .then((servers) => generateHtml(servers))
+        .then((html) => (document.querySelector("#content").innerHTML = html))
+        .catch((error) => displayError(error));
 
-        function callback(data) {
-            return data;
+      function callback(data) {
+        return data;
+      }
+
+      function convertToJson(data) {
+        const outerJson = JSON.parse(data);
+        const contents = outerJson.contents;
+        const index = contents.indexOf(callbackname);
+        const functionCall = contents.slice(index);
+        return eval(functionCall);
+      }
+
+      function isEuServer(serverName) {
+        const euServers = [
+          "Neria",
+          "Kadan",
+          "Trixion",
+          "Calvasus",
+          "Thirain",
+          "Zinnervale",
+          "Asta",
+          "Wei",
+          "Slen",
+        ];
+        return euServers.includes(serverName);
+      }
+
+      function normalizeName(name) {
+        if (name) {
+          name = name.trim();
+          name = name.charAt(0).toUpperCase() + name.slice(1);
+        }
+        return name;
+      }
+
+      function parse(json) {
+        const servers = [];
+
+        for (const row of json.table.rows) {
+          const serverName = normalizeName(row.c[1].v);
+
+          if (!isEuServer(serverName)) {
+            continue;
+          }
+
+          const sizeName = row.c[0].v;
+          const size = sizeName == "Small" ? 1 : sizeName == "Medium" ? 2 : 3;
+          const languageName = normalizeName(row.c[2].v);
+
+          let server = servers.find((s) => s.name == serverName);
+
+          if (!server) {
+            server = { name: serverName, languages: [] };
+            servers.push(server);
+          }
+
+          let language = server.languages.find((l) => l.name == languageName);
+
+          if (!language) {
+            language = { name: languageName, count: 0 };
+            server.languages.push(language);
+          }
+
+          language.count += size;
         }
 
-        fetch(apiUrl)
-            .then(response => response.text())
-            .then(data => convertToJson(data))
-            .then(json => parse(json)).then(servers => document.querySelector('#content').innerHTML = printServers(servers))
-            .catch(error => displayError(error));
-
-        function convertToJson(data) {
-            const outerJson = JSON.parse(data);
-            const content = outerJson.contents;
-            const i = content.indexOf(callbackname);
-            const functionCall = content.slice(i);
-            return eval(functionCall);
+        for (const server of servers) {
+          server.languages = server.languages.sort((a, b) => b.count - a.count);
         }
 
-        function isEuServer(serverName) {
-            const euServers = ['Neria', 'Kadan', 'Trixion', 'Calvasus', 'Thirain', 'Zinnervale', 'Asta', 'Wei', 'Slen'];
-            return euServers.includes(serverName);
+        return servers;
+      }
+
+      function generateHtml(servers) {
+        var html = "";
+        for (const server of servers) {
+          html = html + generateServerHtml(server);
+        }
+        return html;
+      }
+
+      function generateServerHtml(server) {
+        let html = '<div class="server-container">';
+        html += `<div class="server-name">${server.name}</div>`;
+        html += '<div class="languages-container">';
+
+        for (const language of server.languages) {
+          html += '<div class="language-container">';
+          html += `<div class="language-name">${language.name}</div>`;
+          html += `<div class="language-count">${language.count}</div>`;
+          html += "</div>";
         }
 
-        function normalizeName(serverName) {
-            serverName = serverName.trim();
-            return serverName;
-        }
+        html += "</div></div>";
 
-        function parse(json) {
-            const servers = [];
+        return html;
+      }
 
-            for (const row of json.table.rows) {
-                const serverName = normalizeName(row.c[1].v);
-                if (isEuServer(serverName)) {
-                    const sizeName = row.c[0].v;
-                    const size = sizeName == "Small" ? 1 : sizeName == "Medium" ? 2 : 3;
-                    const languageName = normalizeName(row.c[2].v);
-
-                    let server = servers.find(s => s.name == serverName);
-
-                    if (!server) {
-                        server = { name: serverName, languages: [] };
-                        servers.push(server);
-                    }
-
-                    let language = server.languages.find(l => l.name == languageName);
-
-                    if (!language) {
-
-                        language = { name: languageName, count: 0 };
-                        server.languages.push(language);
-                    }
-
-                    language.count += size;
-                }
-            }
-
-            for (const server of servers) {
-                server.languages = server.languages.sort((a, b) => b.count - a.count);
-            }
-
-            return servers;
-        }
-
-        function printServers(servers) {
-            var html = '';
-            for (const server of servers) {
-                html = html + getServerHtml(server);
-            }
-            return html;
-        }
-
-        function getServerHtml(server) {
-            var html = '';
-            html += '<div class="server-container">';
-            html += `<div class="server-name">${server.name}</div>`;
-            html += '<div class="languages-container">'
-
-            for (const language of server.languages) {
-                html += '<div class="language-container">';
-                html += `<div class="language-name">${language.name}</div>`;
-                html += `<div class="language-count">${language.count}</div>`;
-                html += '</div>';
-            }
-
-            html += '</div></div>';
-
-            return html;
-        }
-
+      function displayError(error) {
+        document.querySelector("#error").innerHTML = error;
+      }
     </script>
-</head>
+  </head>
 
-<body>
+  <body>
+    <h1>Lost Ark European Servers</h1>
     <div id="content"></div>
-</body>
-
+    <div id="error"></div>
+  </body>
 </html>
