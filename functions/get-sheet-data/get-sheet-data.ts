@@ -1,8 +1,9 @@
 import { Handler } from "@netlify/functions";
+import fetch from "cross-fetch";
 
 type language = { name: string; count: number };
 type server = { name: string; languages: language[] };
-const callbackname = "callback";
+const callbackname = "googleSheetJsonParseCallback";
 
 function getApiUrl() {
   const documentId = "1wJiDGy77tOdV7ATqXj-bGXH7JmQo-sbjHrYJTcoI4Ow";
@@ -13,7 +14,7 @@ function getApiUrl() {
   return `https://api.allorigins.win/get?url=${encodedUrl}`;
 }
 
-function callback(data: any) {
+function googleSheetJsonParseCallback(data: any) {
   return data;
 }
 
@@ -87,12 +88,21 @@ function parse(json: any): server[] {
 }
 
 export const handler: Handler = async (event, context) => {
-  const { name = "stranger" } = event.queryStringParameters;
+  const apiUrl = getApiUrl();
 
-  return {
-    statusCode: 200,
-    body: JSON.stringify({
-      message: `Hello, ${name}!`,
-    }),
-  };
+  try {
+    const response = await fetch(apiUrl);
+    const responseText = await response.text();
+    const json = convertToJson(responseText);
+    const servers = parse(json);
+    return {
+      statusCode: 200,
+      body: JSON.stringify(servers),
+    };
+  } catch (e) {
+    return {
+      statusCode: 500,
+      body: e,
+    };
+  }
 };

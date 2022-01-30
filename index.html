@@ -58,94 +58,13 @@
     </style>
 
     <script>
-      const documentId = "1wJiDGy77tOdV7ATqXj-bGXH7JmQo-sbjHrYJTcoI4Ow";
-      const pageId = "1303305384";
-      const callbackname = "callback";
-      const tq = "select E, F, G";
-      const url = `https://docs.google.com/spreadsheets/d/${documentId}/gviz/tq?tqx=out:json;responseHandler:${callbackname}&tq=${tq}&gid=${pageId}`;
-      const encodedUrl = encodeURIComponent(url);
-      const apiUrl = `https://api.allorigins.win/get?url=${encodedUrl}`;
+      const functionUrl = "/.netlify/functions/get-sheet-data";
 
-      fetch(apiUrl)
-        .then((response) => response.text())
-        .then((responseText) => convertToJson(responseText))
-        .then((json) => parse(json))
+      fetch(functionUrl)
+        .then((response) => response.json())
         .then((servers) => generateHtml(servers))
         .then((html) => (document.querySelector("#content").innerHTML = html))
         .catch((error) => displayError(error));
-
-      function callback(data) {
-        return data;
-      }
-
-      function convertToJson(data) {
-        const outerJson = JSON.parse(data);
-        const contents = outerJson.contents;
-        const index = contents.indexOf(callbackname);
-        const functionCall = contents.slice(index);
-        return eval(functionCall);
-      }
-
-      function isEuServer(serverName) {
-        const euServers = [
-          "Neria",
-          "Kadan",
-          "Trixion",
-          "Calvasus",
-          "Thirain",
-          "Zinnervale",
-          "Asta",
-          "Wei",
-          "Slen",
-        ];
-        return euServers.includes(serverName);
-      }
-
-      function normalizeName(name) {
-        if (name) {
-          name = name.trim();
-          name = name.charAt(0).toUpperCase() + name.slice(1);
-        }
-        return name;
-      }
-
-      function parse(json) {
-        const servers = [];
-
-        for (const row of json.table.rows) {
-          const serverName = normalizeName(row.c[1].v);
-
-          if (!isEuServer(serverName)) {
-            continue;
-          }
-
-          const sizeName = row.c[0].v;
-          const size = sizeName == "Small" ? 1 : sizeName == "Medium" ? 2 : 3;
-          const languageName = normalizeName(row.c[2].v);
-
-          let server = servers.find((s) => s.name == serverName);
-
-          if (!server) {
-            server = { name: serverName, languages: [] };
-            servers.push(server);
-          }
-
-          let language = server.languages.find((l) => l.name == languageName);
-
-          if (!language) {
-            language = { name: languageName, count: 0 };
-            server.languages.push(language);
-          }
-
-          language.count += size;
-        }
-
-        for (const server of servers) {
-          server.languages = server.languages.sort((a, b) => b.count - a.count);
-        }
-
-        return servers;
-      }
 
       function generateHtml(servers) {
         var html = "";
