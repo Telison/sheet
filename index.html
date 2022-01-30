@@ -23,6 +23,14 @@
         margin-bottom: 30px;
       }
 
+      #note {
+        border-radius: 6px;
+        padding: 12px;
+        background: #303030;
+        margin-bottom: 25px;
+        max-width: 600px;
+        line-height: 1.5;
+      }
       #content {
         display: flex;
         flex-flow: row wrap;
@@ -54,6 +62,7 @@
 
       #error {
         color: #dd7070;
+        margin-bottom: 30px;
       }
     </style>
 
@@ -101,5 +110,11 @@
     <h1>Lost Ark European Servers</h1>
     <div id="content"></div>
     <div id="error"></div>
+    <div id="note">
+      The information is read from the Google sheet made by Ayia where guilds
+      have registered their server and preferred language. The number isn't the
+      number of guilds, instead "large" guilds are counted as 3, medium as 2 and
+      small as 1. So the numbers represent some type of relative population.
+    </div>
   </body>
 </html>
