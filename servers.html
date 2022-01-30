@@ -1,0 +1,152 @@
+<html>
+
+<head>
+    <title>Lost Ark EU servers</title>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <style>
+        html,
+        body {
+            font-family: 'Lato', sans-serif;
+            color: #ddd;
+            background: #202020;
+            padding: 0;
+            margin: 0;
+        }
+
+        #content {
+            display: flex;
+            flex-flow: row wrap;
+            padding: 20px;
+        }
+
+        .server-container {
+            margin: 0 20px 20px 0;
+            border-radius: 6px;
+            padding: 12px;
+            background: #303030;
+        }
+
+        .server-name {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .language-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 2px;
+        }
+
+        .language-name {
+            margin-right: 20px;
+        }
+    </style>
+    <script>
+
+        const id = '1wJiDGy77tOdV7ATqXj-bGXH7JmQo-sbjHrYJTcoI4Ow';
+        const gid = '1303305384';
+        const callbackname = 'callback';
+        const tq = 'select E, F, G';
+        const url = `https://docs.google.com/spreadsheets/d/${id}/gviz/tq?tqx=out:json;responseHandler:${callbackname}&tq=${tq}&gid=${gid}`;
+        const encodedUrl = encodeURIComponent(url);
+        const apiUrl = 'https://api.allorigins.win/get?url=' + encodedUrl;
+
+        function callback(data) {
+            return data;
+        }
+
+        fetch(apiUrl)
+            .then(response => response.text())
+            .then(data => convertToJson(data))
+            .then(json => parse(json)).then(servers => document.querySelector('#content').innerHTML = printServers(servers))
+            .catch(error => displayError(error));
+
+        function convertToJson(data) {
+            const outerJson = JSON.parse(data);
+            const content = outerJson.contents;
+            const i = content.indexOf(callbackname);
+            const functionCall = content.slice(i);
+            return eval(functionCall);
+        }
+
+        function isEuServer(serverName) {
+            const euServers = ['Neria', 'Kadan', 'Trixion', 'Calvasus', 'Thirain', 'Zinnervale', 'Asta', 'Wei', 'Slen'];
+            return euServers.includes(serverName);
+        }
+
+        function normalizeName(serverName) {
+            serverName = serverName.trim();
+            return serverName;
+        }
+
+        function parse(json) {
+            const servers = [];
+
+            for (const row of json.table.rows) {
+                const serverName = normalizeName(row.c[1].v);
+                if (isEuServer(serverName)) {
+                    const sizeName = row.c[0].v;
+                    const size = sizeName == "Small" ? 1 : sizeName == "Medium" ? 2 : 3;
+                    const languageName = normalizeName(row.c[2].v);
+
+                    let server = servers.find(s => s.name == serverName);
+
+                    if (!server) {
+                        server = { name: serverName, languages: [] };
+                        servers.push(server);
+                    }
+
+                    let language = server.languages.find(l => l.name == languageName);
+
+                    if (!language) {
+
+                        language = { name: languageName, count: 0 };
+                        server.languages.push(language);
+                    }
+
+                    language.count += size;
+                }
+            }
+
+            for (const server of servers) {
+                server.languages = server.languages.sort((a, b) => b.count - a.count);
+            }
+
+            return servers;
+        }
+
+        function printServers(servers) {
+            var html = '';
+            for (const server of servers) {
+                html = html + getServerHtml(server);
+            }
+            return html;
+        }
+
+        function getServerHtml(server) {
+            var html = '';
+            html += '<div class="server-container">';
+            html += `<div class="server-name">${server.name}</div>`;
+            html += '<div class="languages-container">'
+
+            for (const language of server.languages) {
+                html += '<div class="language-container">';
+                html += `<div class="language-name">${language.name}</div>`;
+                html += `<div class="language-count">${language.count}</div>`;
+                html += '</div>';
+            }
+
+            html += '</div></div>';
+
+            return html;
+        }
+
+    </script>
+</head>
+
+<body>
+    <div id="content"></div>
+</body>
+
+</html>
