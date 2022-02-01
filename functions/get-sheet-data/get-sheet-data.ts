@@ -61,10 +61,12 @@ function parseLanguage(languageText: string): string[] {
 
 const languageTranslations = {
   "Czech/Slovak": "Czech-Slovak",
+  Czech: "Czech-Slovak",
   "Croatian/Serbian/Bosnian/Slovenian": "Serbo-Croatian",
   Croatian: "Serbo-Croatian",
   "Serbian/Croatian": "Serbo-Croatian",
   Balkan: "Serbo-Croatian",
+  Serbian: "Serbo-Croatian",
   Multicultural: "",
   SwissGerman: "",
 };
@@ -120,7 +122,7 @@ function parse(sheetTable: any): server[] {
     for (const language of server.languages) {
       language.count = Math.ceil(language.count);
     }
-    server.languages = server.languages.filter((l) => l.count > 1);
+    //server.languages = server.languages.filter((l) => l.count > 1);
     server.languages = server.languages.sort((a, b) => {
       const countCompare = b.count - a.count;
       if (countCompare == 0) {
