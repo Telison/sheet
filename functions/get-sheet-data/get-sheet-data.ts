@@ -1,5 +1,25 @@
-import { Handler } from "@netlify/functions";
 import fetch from "cross-fetch";
+
+export async function handler(_event, _context) {
+  const apiUrl = getApiUrl();
+
+  try {
+    const response = await fetch(apiUrl);
+    const responseText = await response.text();
+    const sheetTable = convertToSheetTable(responseText);
+    const servers = parse(sheetTable);
+    return {
+      statusCode: 200,
+      body: JSON.stringify(servers),
+    };
+  } catch (e) {
+    console.log(e);
+    return {
+      statusCode: 500,
+      body: JSON.stringify(e),
+    };
+  }
+}
 
 type language = { name: string; count: number };
 type server = { name: string; languages: language[] };
@@ -59,25 +79,29 @@ function parseLanguage(languageText: string): string[] {
   return languages.map((l) => translateLanugageName(l)).filter((l) => !!l);
 }
 
+const serboCroatian = "Serbo-Croatian";
+const czechSlovak = "Czech-Slovak";
+const german = "German";
+
 const languageTranslations = {
-  "Czech/Slovak": "Czech-Slovak",
-  Czech: "Czech-Slovak",
-  "Croatian/Serbian/Bosnian/Slovenian": "Serbo-Croatian",
+  "Czech/Slovak": czechSlovak,
+  Czech: czechSlovak,
+  "Croatian/Serbian/Bosnian/Slovenian": serboCroatian,
   Croatian: "Serbo-Croatian",
-  "Serbian/Croatian": "Serbo-Croatian",
-  "Balkan (Serb, Cro, MN, Bos": "Serbo-Croatian",
-  Balkan: "Serbo-Croatian",
-  Serbian: "Serbo-Croatian",
-  Multicultural: "",
-  SwissGerman: "",
+  "Serbian/Croatian": serboCroatian,
+  "Balkan (Serb, Cro, MN, Bos)": serboCroatian,
+  Balkan: serboCroatian,
+  Serbian: serboCroatian,
+  Multicultural: "International",
+  SwissGerman: german,
+  Deutsch: german,
+  "Streamer (Turkish)": "Turkish",
+  "Turkish (Streamer)": "Turkish",
+  "Mostly Korean": "Korean",
 };
 
 function translateLanugageName(l: string) {
   l = normalizeName(l);
-  l = l.replace("Mostly ", "");
-  l = l.replace(" (Streamer)", "");
-  l = l.replace("Streamer (", "");
-  l = l.replace(")", "");
 
   return languageTranslations[l] ?? l;
 }
@@ -135,24 +159,3 @@ function parse(sheetTable: any): server[] {
 
   return servers;
 }
-
-export const handler: Handler = async (_event, _context) => {
-  const apiUrl = getApiUrl();
-
-  try {
-    const response = await fetch(apiUrl);
-    const responseText = await response.text();
-    const sheetTable = convertToSheetTable(responseText);
-    const servers = parse(sheetTable);
-    return {
-      statusCode: 200,
-      body: JSON.stringify(servers),
-    };
-  } catch (e) {
-    console.log(e);
-    return {
-      statusCode: 500,
-      body: JSON.stringify(e),
-    };
-  }
-};

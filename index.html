@@ -110,13 +110,14 @@
 
       function displayError(error) {
         document.querySelector("#error").innerHTML = error;
+        document.querySelector("#content").innerHTML = "";
       }
     </script>
   </head>
 
   <body>
     <h1>Lost Ark European Servers</h1>
-    <div id="content"></div>
+    <div id="content">Loading data...</div>
     <div id="error"></div>
     <div id="note">
       The information is read from the Applications tab of the
