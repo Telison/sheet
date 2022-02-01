@@ -65,6 +65,7 @@ const languageTranslations = {
   "Croatian/Serbian/Bosnian/Slovenian": "Serbo-Croatian",
   Croatian: "Serbo-Croatian",
   "Serbian/Croatian": "Serbo-Croatian",
+  "Balkan (Serb, Cro, MN, Bos": "Serbo-Croatian",
   Balkan: "Serbo-Croatian",
   Serbian: "Serbo-Croatian",
   Multicultural: "",
