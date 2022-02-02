@@ -82,22 +82,24 @@ function parseLanguage(languageText: string): string[] {
 const serboCroatian = "Serbo-Croatian";
 const czechSlovak = "Czech-Slovak";
 const german = "German";
+const turkish = "Turkish";
 
 const languageTranslations = {
-  "Czech/Slovak": czechSlovak,
-  Czech: czechSlovak,
-  "Croatian/Serbian/Bosnian/Slovenian": serboCroatian,
-  Croatian: "Serbo-Croatian",
-  "Serbian/Croatian": serboCroatian,
-  "Balkan (Serb, Cro, MN, Bos)": serboCroatian,
-  Balkan: serboCroatian,
-  Serbian: serboCroatian,
-  Multicultural: "International",
-  SwissGerman: german,
-  Deutsch: german,
-  "Streamer (Turkish)": "Turkish",
-  "Turkish (Streamer)": "Turkish",
-  "Mostly Korean": "Korean",
+  ["Czech/Slovak"]: czechSlovak,
+  ["Czech and Slovak"]: czechSlovak,
+  ["Czech"]: czechSlovak,
+  ["Croatian/Serbian/Bosnian/Slovenian"]: serboCroatian,
+  ["Croatian:"]: serboCroatian,
+  ["Serbian/Croatian"]: serboCroatian,
+  ["Balkan (Serb, Cro, MN, Bos)"]: serboCroatian,
+  ["Balkan"]: serboCroatian,
+  ["Serbian"]: serboCroatian,
+  ["Multicultural"]: "International",
+  ["SwissGerman"]: german,
+  ["Deutsch"]: german,
+  ["Streamer (Turkish)"]: turkish,
+  ["Turkish (Streamer)"]: turkish,
+  ["Mostly Korean"]: "Korean",
 };
 
 function translateLanugageName(l: string) {

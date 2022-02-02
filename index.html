@@ -71,6 +71,10 @@
       a {
         color: #bbccff;
       }
+
+      .hidden {
+        display: none;
+      }
     </style>
 
     <script>
@@ -79,7 +83,10 @@
       fetch(functionUrl)
         .then((response) => response.json())
         .then((servers) => generateHtml(servers))
-        .then((html) => (document.querySelector("#content").innerHTML = html))
+        .then((html) => {
+          document.querySelector("#content").innerHTML = html;
+          document.querySelector("#note").classList.remove("hidden");
+        })
         .catch((error) => displayError(error));
 
       function generateHtml(servers) {
@@ -117,9 +124,9 @@
 
   <body>
     <h1>Lost Ark European Servers</h1>
-    <div id="content">Loading data...</div>
+    <div id="content"><i>Loading data...</i></div>
     <div id="error"></div>
-    <div id="note">
+    <div id="note" class="hidden">
       The information is read from the Applications tab of the
       <a
         href="https://docs.google.com/spreadsheets/d/1wJiDGy77tOdV7ATqXj-bGXH7JmQo-sbjHrYJTcoI4Ow/edit#gid=1303305384"
