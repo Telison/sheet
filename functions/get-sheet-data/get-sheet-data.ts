@@ -96,10 +96,13 @@ const languageTranslations = {
   ["Serbian"]: serboCroatian,
   ["Multicultural"]: "International",
   ["SwissGerman"]: german,
+  ["Swiss-German"]: german,
   ["Deutsch"]: german,
+  ["Germany"]: german,
   ["Streamer (Turkish)"]: turkish,
   ["Turkish (Streamer)"]: turkish,
   ["Mostly Korean"]: "Korean",
+  ["Français"]: "French",
 };
 
 function translateLanugageName(l: string) {
