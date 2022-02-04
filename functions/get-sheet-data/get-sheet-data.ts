@@ -105,6 +105,7 @@ const languageTranslations = {
   ["Français"]: "French",
   ["Arab"]: "Arabic",
   ["Spannish"]: "Spanish",
+  ["Scandinavian"]: "Nordic",
 };
 
 function translateLanugageName(l: string) {
