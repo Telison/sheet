@@ -22,7 +22,7 @@ export async function handler(_event, _context) {
 }
 
 type language = { name: string; count: number };
-type server = { name: string; languages: language[] };
+type server = { name: string; total: number; languages: language[] };
 const callbackname = "googleSheetJsonParseCallback";
 
 function getApiUrl() {
@@ -103,6 +103,7 @@ const languageTranslations = {
   ["Turkish (Streamer)"]: turkish,
   ["Mostly Korean"]: "Korean",
   ["Français"]: "French",
+  ["Arab"]: "Arabic",
 };
 
 function translateLanugageName(l: string) {
@@ -128,7 +129,7 @@ function parse(sheetTable: any): server[] {
     let server = servers.find((s) => s.name == serverName);
 
     if (!server) {
-      server = { name: serverName, languages: [] };
+      server = { name: serverName, total: 0, languages: [] };
       servers.push(server);
     }
 
@@ -145,6 +146,7 @@ function parse(sheetTable: any): server[] {
       }
 
       language.count += size;
+      server.total += size;
     }
   }
 
@@ -152,7 +154,6 @@ function parse(sheetTable: any): server[] {
     for (const language of server.languages) {
       language.count = Math.ceil(language.count);
     }
-    //server.languages = server.languages.filter((l) => l.count > 1);
     server.languages = server.languages.sort((a, b) => {
       const countCompare = b.count - a.count;
       if (countCompare == 0) {
@@ -162,5 +163,5 @@ function parse(sheetTable: any): server[] {
     });
   }
 
-  return servers;
+  return servers.sort((a, b) => b.total - a.total);
 }

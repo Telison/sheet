@@ -8,74 +8,7 @@
       rel="stylesheet"
       type="text/css"
     />
-    <style>
-      html {
-        font-family: Lato, Sans-Serif;
-        color: #dddfe2;
-        background: #101218;
-        margin: 0;
-        padding: 0;
-      }
-
-      body {
-        padding: 40px 40px 0 40px;
-        margin: 0;
-      }
-
-      h1 {
-        margin-top: 0;
-        margin-bottom: 30px;
-      }
-
-      #note {
-        border-radius: 6px;
-        padding: 12px;
-        background: #263035;
-        max-width: 600px;
-        line-height: 1.5;
-      }
-      #content {
-        display: flex;
-        flex-flow: row wrap;
-        grid-gap: 20px;
-      }
-
-      .server-container {
-        border-radius: 6px;
-        padding: 12px;
-        background: #263035;
-      }
-
-      .server-name {
-        font-size: 20px;
-        font-weight: bold;
-        margin-bottom: 14px;
-        color: white;
-      }
-
-      .language-container {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 3px;
-      }
-
-      .language-name {
-        margin-right: 20px;
-      }
-
-      #error {
-        color: #dd7070;
-        margin-bottom: 30px;
-      }
-
-      a {
-        color: #bbccff;
-      }
-
-      .hidden {
-        display: none;
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css" />
 
     <script>
       const functionUrl = "/.netlify/functions/get-sheet-data";
@@ -100,7 +33,12 @@
 
       function generateServerHtml(server) {
         let html = '<div class="server-container">';
+        html += `<div class="server-name-container">`;
+
         html += `<div class="server-name">${server.name}</div>`;
+        html += `<div class="server-count">${server.total}</div>`;
+
+        html += `</div>`;
         html += '<div class="languages-container">';
 
         for (const language of server.languages) {
@@ -124,6 +62,7 @@
 
   <body>
     <h1>Lost Ark European Servers</h1>
+    <h2>Registered Guild Languages</h2>
     <div id="content"><i>Loading data...</i></div>
     <div id="error"></div>
     <div id="note" class="hidden">
