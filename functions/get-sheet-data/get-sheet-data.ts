@@ -89,7 +89,7 @@ const languageTranslations = {
   ["Czech and Slovak"]: czechSlovak,
   ["Czech"]: czechSlovak,
   ["Croatian/Serbian/Bosnian/Slovenian"]: serboCroatian,
-  ["Croatian:"]: serboCroatian,
+  ["Croatian"]: serboCroatian,
   ["Serbian/Croatian"]: serboCroatian,
   ["Balkan (Serb, Cro, MN, Bos)"]: serboCroatian,
   ["Balkan"]: serboCroatian,
