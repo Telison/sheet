@@ -126,27 +126,29 @@ function parse(sheetTable: any): server[] {
     const size = sizeName == "Small" ? 1 : sizeName == "Medium" ? 2 : 3;
     const rawLanguageName = normalizeName(row.c[2].v);
 
-    let server = servers.find((s) => s.name == serverName);
+    if (rawLanguageName !== "Null") {
+      let server = servers.find((s) => s.name == serverName);
 
-    if (!server) {
-      server = { name: serverName, total: 0, languages: [] };
-      servers.push(server);
-    }
-
-    const languageNames = parseLanguage(rawLanguageName);
-
-    const count = size / languageNames.length;
-
-    for (const languageName of languageNames) {
-      let language = server.languages.find((l) => l.name == languageName);
-
-      if (!language) {
-        language = { name: languageName, count: 0 };
-        server.languages.push(language);
+      if (!server) {
+        server = { name: serverName, total: 0, languages: [] };
+        servers.push(server);
       }
 
-      language.count += size;
-      server.total += size;
+      const languageNames = parseLanguage(rawLanguageName);
+
+      const count = size / languageNames.length;
+
+      for (const languageName of languageNames) {
+        let language = server.languages.find((l) => l.name == languageName);
+
+        if (!language) {
+          language = { name: languageName, count: 0 };
+          server.languages.push(language);
+        }
+
+        language.count += count;
+        server.total += count;
+      }
     }
   }
 
