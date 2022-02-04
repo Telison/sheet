@@ -104,6 +104,7 @@ const languageTranslations = {
   ["Mostly Korean"]: "Korean",
   ["Français"]: "French",
   ["Arab"]: "Arabic",
+  ["Spannish"]: "Spanish",
 };
 
 function translateLanugageName(l: string) {
