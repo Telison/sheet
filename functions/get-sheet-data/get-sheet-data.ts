@@ -7,6 +7,7 @@ export async function handler(_event, _context) {
     const response = await fetch(apiUrl);
     const responseText = await response.text();
     const sheetTable = convertToSheetTable(responseText);
+    console.log(sheetTable);
     const servers = parse(sheetTable);
     return {
       statusCode: 200,
@@ -40,6 +41,7 @@ function googleSheetJsonParseCallback(data: any) {
 function convertToSheetTable(data: string) {
   const index = data.indexOf(callbackname);
   const functionCall = data.slice(index);
+  console.log(functionCall);
   return eval(functionCall);
 }
 
@@ -115,42 +117,64 @@ function translateLanugageName(l: string) {
 }
 
 function parse(sheetTable: any): server[] {
+  console.log(sheetTable);
   const servers: server[] = [];
 
   for (const row of sheetTable.table.rows) {
+    if (!row.c || !row.c || row.c.length < 1) {
+      continue;
+    }
+
+    if (!row.c[1]) {
+      continue;
+    }
+
     const serverName = normalizeName(row.c[1].v);
+    if (!serverName) {
+      continue;
+    }
+    console.log(serverName);
 
     if (!isEuServer(serverName)) {
       continue;
     }
 
-    const sizeName = row.c[0].v;
-    const size = sizeName == "Small" ? 1 : sizeName == "Medium" ? 2 : 3;
-    const rawLanguageName = normalizeName(row.c[2].v);
+    console.log(row);
+    console.log(row.c[0]);
 
-    if (rawLanguageName !== "Null") {
-      let server = servers.find((s) => s.name == serverName);
+    try {
+      if (row.c[0]) {
+        const sizeName = row.c[0].v;
+        const size = sizeName == "Small" ? 1 : sizeName == "Medium" ? 2 : 3;
+        const rawLanguageName = normalizeName(row.c[2].v);
 
-      if (!server) {
-        server = { name: serverName, total: 0, languages: [] };
-        servers.push(server);
-      }
+        if (rawLanguageName !== "Null") {
+          let server = servers.find((s) => s.name == serverName);
 
-      const languageNames = parseLanguage(rawLanguageName);
+          if (!server) {
+            server = { name: serverName, total: 0, languages: [] };
+            servers.push(server);
+          }
 
-      const count = size / languageNames.length;
+          const languageNames = parseLanguage(rawLanguageName);
 
-      for (const languageName of languageNames) {
-        let language = server.languages.find((l) => l.name == languageName);
+          const count = size / languageNames.length;
 
-        if (!language) {
-          language = { name: languageName, count: 0 };
-          server.languages.push(language);
+          for (const languageName of languageNames) {
+            let language = server.languages.find((l) => l.name == languageName);
+
+            if (!language) {
+              language = { name: languageName, count: 0 };
+              server.languages.push(language);
+            }
+
+            language.count += count;
+            server.total += count;
+          }
         }
-
-        language.count += count;
-        server.total += count;
       }
+    } catch (e) {
+      console.log(e);
     }
   }
 
