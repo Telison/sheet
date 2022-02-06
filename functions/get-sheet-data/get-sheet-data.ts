@@ -7,7 +7,6 @@ export async function handler(_event, _context) {
     const response = await fetch(apiUrl);
     const responseText = await response.text();
     const sheetTable = convertToSheetTable(responseText);
-    console.log(sheetTable);
     const servers = parse(sheetTable);
     return {
       statusCode: 200,
@@ -41,7 +40,6 @@ function googleSheetJsonParseCallback(data: any) {
 function convertToSheetTable(data: string) {
   const index = data.indexOf(callbackname);
   const functionCall = data.slice(index);
-  console.log(functionCall);
   return eval(functionCall);
 }
 
@@ -117,7 +115,6 @@ function translateLanugageName(l: string) {
 }
 
 function parse(sheetTable: any): server[] {
-  console.log(sheetTable);
   const servers: server[] = [];
 
   for (const row of sheetTable.table.rows) {
@@ -133,14 +130,10 @@ function parse(sheetTable: any): server[] {
     if (!serverName) {
       continue;
     }
-    console.log(serverName);
 
     if (!isEuServer(serverName)) {
       continue;
     }
-
-    console.log(row);
-    console.log(row.c[0]);
 
     try {
       if (row.c[0]) {
@@ -179,6 +172,8 @@ function parse(sheetTable: any): server[] {
   }
 
   for (const server of servers) {
+    server.total = Math.ceil(server.total);
+
     for (const language of server.languages) {
       language.count = Math.ceil(language.count);
     }
