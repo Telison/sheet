@@ -1,0 +1,1345 @@
+{
+  "version": "0.6",
+  "reqId": "0",
+  "status": "ok",
+  "sig": "58792915",
+  "table": {
+    "cols": [
+      { "id": "E", "label": "Roster Size", "type": "string" },
+      { "id": "F", "label": "Server", "type": "string" },
+      { "id": "G", "label": "Guild Language", "type": "string" }
+    ],
+    "rows": [
+      { "c": [{ "v": "Medium" }, { "v": "Kadan" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Kadan" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Avesta" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Kadan" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Mari" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Azena" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Valtan" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Azena" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Kadan" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Kadan" }, { "v": "English/German" }] },
+      { "c": [{ "v": "Small" }, { "v": "Neria" }, { "v": "German" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Avesta" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Valtan" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Regulus" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Azena" }, { "v": "English" }] },
+      { "c": [{ "v": "Large" }, { "v": "Valtan" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Azena" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Una" }, { "v": "English" }] },
+      { "c": [{ "v": "Large" }, { "v": "Kadan" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Una" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Thirain" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Mari" }, { "v": "English" }] },
+      { "c": [{ "v": "Large" }, { "v": "Kadan" }, { "v": "Romanian" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Valtan" }, { "v": "English" }] },
+      { "c": [{ "v": "Large" }, { "v": "Valtan" }, { "v": "English" }] },
+      { "c": [{ "v": "Large" }, { "v": "Asta" }, { "v": "German" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Mari" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Valtan" }, { "v": "English " }] },
+      { "c": [{ "v": "Large" }, { "v": "Valtan" }, { "v": "English" }] },
+      { "c": [{ "v": "Large" }, { "v": "Avesta" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Valtan" }, { "v": "English" }] },
+      { "c": [{ "v": "Large" }, { "v": "Kadan" }, { "v": "Turkish" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Una" }, { "v": "English" }] },
+      {
+        "c": [
+          { "v": "Small" },
+          { "v": "Zinnervale" },
+          { "v": "English/Arabic" }
+        ]
+      },
+      { "c": [{ "v": "Medium" }, { "v": "Valtan" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Kadan" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Trixion" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Valtan" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Regulus" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Una" }, { "v": "English" }] },
+      { "c": [{ "v": "Large" }, { "v": "Valtan" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Azena" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Azena" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Azena" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Una" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Azena" }, { "v": "French" }] },
+      { "c": [{ "v": "Small" }, { "v": "Avesta" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Regulus" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Mari" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Valtan" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Enviska" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Valtan" }, { "v": "English" }] },
+      { "c": [{ "v": "Large" }, { "v": "Asta" }, { "v": "Arabic" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Zinnervale" }, { "v": "English" }] },
+      { "c": [{ "v": "Large" }, { "v": "Valtan" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Trixion" }, { "v": "French" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Mari" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Asta" }, { "v": "German" }] },
+      { "c": [{ "v": "Small" }, { "v": "Valtan" }, { "v": "English/OCE" }] },
+      { "c": [{ "v": "Small" }, { "v": "Avesta" }, { "v": "Korean" }] },
+      { "c": [{ "v": "Small" }, { "v": "Valtan" }, { "v": "English " }] },
+      {
+        "c": [
+          { "v": "Medium" },
+          { "v": "Zinnervale" },
+          { "v": "English/Polish" }
+        ]
+      },
+      { "c": [{ "v": "Large" }, { "v": "Azena" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Kadan" }, { "v": "English" }] },
+      { "c": [{ "v": "Large" }, { "v": "Wei" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Asta" }, { "v": "German" }] },
+      { "c": [{ "v": "Small" }, { "v": "Kadan" }, { "v": "English/Swedish" }] },
+      {
+        "c": [{ "v": "Large" }, { "v": "Zinnervale" }, { "v": "Czech/Slovak" }]
+      },
+      { "c": [{ "v": "Medium" }, { "v": "Zinnervale" }, { "v": "English " }] },
+      { "c": [{ "v": "Small" }, { "v": "Kadan" }, { "v": "Polish" }] },
+      {
+        "c": [
+          { "v": "Medium" },
+          { "v": "Zinnervale" },
+          { "v": "English/Arabic" }
+        ]
+      },
+      { "c": [{ "v": "Large" }, { "v": "Kadan" }, { "v": "English" }] },
+      { "c": [{ "v": "Large" }, { "v": "Asta" }, { "v": "English/Arabic" }] },
+      { "c": [{ "v": "Large" }, { "v": "Wei" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Kadan" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Kadan" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Large" }, { "v": "Wei" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Large" }, { "v": "Kadan" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Kadan" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Kadan" }, { "v": "English/Polish" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Asta" }, { "v": "French" }] },
+      { "c": [{ "v": "Large" }, { "v": "Azena" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Regulus" }, { "v": "English" }] },
+      {
+        "c": [
+          { "v": "Medium" },
+          { "v": "Kazeros" },
+          { "v": "Portuguese/Brazilian " }
+        ]
+      },
+      { "c": [{ "v": "Small" }, { "v": "Asta" }, { "v": "German" }] },
+      { "c": [{ "v": "Small" }, { "v": "Neria" }, { "v": "Italian" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Trixion" }, { "v": "French" }] },
+      { "c": [{ "v": "Small" }, { "v": "Trixion" }, { "v": "French" }] },
+      { "c": [{ "v": "Small" }, { "v": "Azena" }, { "v": "English" }] },
+      { "c": [{ "v": "Large" }, { "v": "Asta" }, { "v": "German" }] },
+      { "c": [{ "v": "Small" }, { "v": "Neria" }, { "v": "Italian" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Kadan" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Kadan" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Neria" }, { "v": "Italian" }] },
+      { "c": [{ "v": "Large" }, { "v": "Kadan" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Kadan" }, { "v": "French" }] },
+      {
+        "c": [{ "v": "Medium" }, { "v": "Trixion" }, { "v": "English/Turkish" }]
+      },
+      {
+        "c": [
+          { "v": "Small" },
+          { "v": "Zinnervale" },
+          { "v": "English/Finnish" }
+        ]
+      },
+      { "c": [{ "v": "Medium" }, { "v": "Wei" }, { "v": "English/Romanian" }] },
+      { "c": [{ "v": "Large" }, { "v": "Zinnervale" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Avesta" }, { "v": "English" }] },
+      {
+        "c": [{ "v": "Medium" }, { "v": "Kadan" }, { "v": "English/Russian" }]
+      },
+      { "c": [{ "v": "Small" }, { "v": "Azena" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Zinnervale" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Valtan" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Neria" }, { "v": "German" }] },
+      { "c": [{ "v": "Large" }, { "v": "Azena" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Kadan" }, { "v": "English" }] },
+      {
+        "c": [
+          { "v": "Small" },
+          { "v": "Zinnervale" },
+          { "v": "English/Finnish" }
+        ]
+      },
+      {
+        "c": [{ "v": "Small" }, { "v": "Calvasus" }, { "v": "English/German" }]
+      },
+      { "c": [{ "v": "Medium" }, { "v": "Trixion" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Zinnervale" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Asta" }, { "v": "Polish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Una" }, { "v": "English" }] },
+      { "c": [{ "v": "Large" }, { "v": "Zinnervale" }, { "v": "Greek" }] },
+      {
+        "c": [{ "v": "Small" }, { "v": "Trixion" }, { "v": "English/German" }]
+      },
+      { "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Regulus" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Trixion" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Neria" }, { "v": "Polish" }] },
+      { "c": [{ "v": "Large" }, { "v": "Wei" }, { "v": "Italian" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Kadan" }, { "v": "Arabic" }] },
+      { "c": [{ "v": "Small" }, { "v": "Neria" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Azena" }, { "v": "English" }] },
+      { "c": [{ "v": "Large" }, { "v": "Kadan" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Kadan" }, { "v": "Turkish" }] },
+      { "c": [{ "v": "Large" }, { "v": "Kadan" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Neria" }, { "v": "Polish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Kadan" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Asta" }, { "v": "German" }] },
+      { "c": [{ "v": "Small" }, { "v": "Valtan" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Regulus" }, { "v": "English" }] },
+      {
+        "c": [
+          { "v": "Medium" },
+          { "v": "Kadan" },
+          { "v": "Mostly Korean/English" }
+        ]
+      },
+      { "c": [{ "v": "Small" }, { "v": "Mari" }, { "v": "English" }] },
+      { "c": [{ "v": "Large" }, { "v": "Regulus" }, { "v": "English" }] },
+      { "c": [{ "v": "Large" }, { "v": "Kadan" }, { "v": "Turkish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Neria" }, { "v": "English/German" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Avesta" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Kadan" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Asta" }, { "v": "German" }] },
+      {
+        "c": [{ "v": "Large" }, { "v": "Kadan" }, { "v": "English / Polish" }]
+      },
+      { "c": [{ "v": "Small" }, { "v": "Una" }, { "v": "English" }] },
+      { "c": [{ "v": "Large" }, { "v": "Zinnervale" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Una" }, { "v": "English" }] },
+      { "c": [{ "v": "Large" }, { "v": "Asta" }, { "v": "German" }] },
+      { "c": [{ "v": "Large" }, { "v": "Azena" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Kadan" }, { "v": "English/German" }] },
+      { "c": [{ "v": "Small" }, { "v": "Asta" }, { "v": "German" }] },
+      {
+        "c": [
+          { "v": "Medium" },
+          { "v": "Kadan" },
+          { "v": "English/Multicultural" }
+        ]
+      },
+      { "c": [{ "v": "Large" }, { "v": "Neria" }, { "v": "Polish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Kadan" }, { "v": "English" }] },
+      { "c": [{ "v": "Large" }, { "v": "Kazeros" }, { "v": "Portuguese " }] },
+      { "c": [{ "v": "Medium" }, { "v": "Regulus" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Azena" }, { "v": "Chinese" }] },
+      { "c": [{ "v": "Small" }, { "v": "Valtan" }, { "v": "English" }] },
+      { "c": [{ "v": "Large" }, { "v": "Valtan" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Asta" }, { "v": "English/German" }] },
+      { "c": [{ "v": "Small" }, { "v": "Neria" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Valtan" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "English" }] },
+      { "c": [{ "v": "Large" }, { "v": "Asta" }, { "v": "Romanian" }] },
+      { "c": [{ "v": "Large" }, { "v": "Kadan" }, { "v": "Romanian" }] },
+      { "c": [{ "v": "Small" }, { "v": "Neria" }, { "v": "German" }] },
+      { "c": [{ "v": "Small" }, { "v": "Kadan" }, { "v": "English" }] },
+      { "c": [{ "v": "Large" }, { "v": "Valtan" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Mari" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Una" }, { "v": "English" }] },
+      { "c": [{ "v": "Large" }, { "v": "Trixion" }, { "v": "German" }] },
+      { "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "French" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Mari" }, { "v": "English" }] },
+      { "c": [{ "v": "Large" }, { "v": "Neria" }, { "v": "Italian" }] },
+      { "c": [{ "v": "Large" }, { "v": "Azena" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Azena" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Avesta" }, { "v": "English" }] },
+      {
+        "c": [
+          { "v": "Medium" },
+          { "v": "Zinnervale" },
+          { "v": "English/Polish" }
+        ]
+      },
+      { "c": [{ "v": "Small" }, { "v": "Regulus" }, { "v": "English" }] },
+      {
+        "c": [{ "v": "Small" }, { "v": "Una" }, { "v": "Portuguese/Brazilian" }]
+      },
+      { "c": [{ "v": "Medium" }, { "v": "Asta" }, { "v": "German" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Asta" }, { "v": "German" }] },
+      { "c": [{ "v": "Small" }, { "v": "Asta" }, { "v": "German" }] },
+      { "c": [{ "v": "Small" }, { "v": "Asta" }, { "v": "German" }] },
+      { "c": [{ "v": "Small" }, { "v": "Neria" }, { "v": "Italian" }] },
+      { "c": [{ "v": "Large" }, { "v": "Asta" }, { "v": "Deutsch" }] },
+      { "c": [{ "v": "Small" }, { "v": "Kadan" }, { "v": "Czech/Slovak" }] },
+      { "c": [{ "v": "Large" }, { "v": "Azena" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Regulus" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Asta" }, { "v": "German" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Asta" }, { "v": "German" }] },
+      { "c": [{ "v": "Large" }, { "v": "Una" }, { "v": "Chinese" }] },
+      { "c": [{ "v": "Small" }, { "v": "Asta" }, { "v": "English" }] },
+      { "c": [{ "v": "Large" }, { "v": "Neria" }, { "v": "Hungarian" }] },
+      { "c": [{ "v": "Large" }, { "v": "Azena" }, { "v": "English" }] },
+      { "c": [{ "v": "Large" }, { "v": "Kadan" }, { "v": "Turkish" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Kadan" }, { "v": "Turkish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Valtan" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Asta" }, { "v": "German" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Kadan" }, { "v": "Polish" }] },
+      { "c": [{ "v": "Large" }, { "v": "Mari" }, { "v": "English" }] },
+      {
+        "c": [{ "v": "Large" }, { "v": "Zinnervale" }, { "v": "Czech/Slovak" }]
+      },
+      { "c": [{ "v": "Medium" }, { "v": "Una" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Asta" }, { "v": "German" }] },
+      { "c": [{ "v": "Small" }, { "v": "Azena" }, { "v": "English/Spanish" }] },
+      {
+        "c": [
+          { "v": "Small" },
+          { "v": "Zinnervale" },
+          { "v": "English/Finnish" }
+        ]
+      },
+      { "c": [{ "v": "Medium" }, { "v": "Neria" }, { "v": "Polish" }] },
+      {
+        "c": [{ "v": "Large" }, { "v": "Agaton" }, { "v": "English/Spanish" }]
+      },
+      { "c": [{ "v": "Small" }, { "v": "Mari" }, { "v": "English " }] },
+      { "c": [{ "v": "Medium" }, { "v": "Azena" }, { "v": "English" }] },
+      { "c": [{ "v": "Large" }, { "v": "Neria" }, { "v": "French" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Una" }, { "v": "English" }] },
+      {
+        "c": [
+          { "v": "Small" },
+          { "v": "Kazeros" },
+          { "v": "English/Portuguese" }
+        ]
+      },
+      { "c": [{ "v": "Medium" }, { "v": "Asta" }, { "v": "German" }] },
+      { "c": [{ "v": "Small" }, { "v": "Valtan" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Azena" }, { "v": "Mandarin" }] },
+      { "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "English" }] },
+      { "c": [{ "v": "Large" }, { "v": "Wei" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "English" }] },
+      { "c": [{ "v": "Large" }, { "v": "Azena" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Wei" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Regulus" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Kadan" }, { "v": "Turkish" }] },
+      { "c": [{ "v": "Large" }, { "v": "Trixion" }, { "v": "Turkish" }] },
+      { "c": [{ "v": "Large" }, { "v": "Trixion" }, { "v": "International" }] },
+      { "c": [{ "v": "Small" }, { "v": "Trixion" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Kazeros" }, { "v": "Spanish" }] },
+      {
+        "c": [{ "v": "Large" }, { "v": "Trixion" }, { "v": "English/Turkish" }]
+      },
+      { "c": [{ "v": "Medium" }, { "v": "Kadan" }, { "v": "Chinese" }] },
+      { "c": [{ "v": "Large" }, { "v": "Valtan" }, { "v": "Chinese" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Zinnervale" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Mari" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Wei" }, { "v": "English/Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Regulus" }, { "v": "English" }] },
+      {
+        "c": [
+          { "v": "Medium" },
+          { "v": "Valtan" },
+          { "v": "English/Mandarin/Cantonese" }
+        ]
+      },
+      { "c": [{ "v": "Small" }, { "v": "Kadan" }, { "v": "English/Polish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Una" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Azena" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Valtan" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Una" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Una" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Valtan" }, { "v": "English/Korean" }] },
+      { "c": [{ "v": "Small" }, { "v": "Mari" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Valtan" }, { "v": "English" }] },
+      { "c": [{ "v": "Large" }, { "v": "Zinnervale" }, { "v": "Portuguese" }] },
+      { "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Una" }, { "v": "English" }] },
+      {
+        "c": [{ "v": "Medium" }, { "v": "Kadan" }, { "v": "English/Serbian" }]
+      },
+      { "c": [{ "v": "Large" }, { "v": "Kadan" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Asta" }, { "v": "English" }] },
+      { "c": [{ "v": "Large" }, { "v": "Regulus" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Thirain" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Azena" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Valtan" }, { "v": "English" }] },
+      { "c": [{ "v": "Large" }, { "v": "Regulus" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Azena" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Agaton" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Agaton" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Trixion" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Large" }, { "v": "Azena" }, { "v": "Korean" }] },
+      { "c": [{ "v": "Large" }, { "v": "Una" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Valtan" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Mari" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Valtan" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Azena" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Azena" }, { "v": "English/Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Una" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Valtan" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Trixion" }, { "v": "French" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Azena" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Una" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Neria" }, { "v": "Polish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Neria" }, { "v": "Polish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "Finnish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Valtan" }, { "v": "English" }] },
+      { "c": [{ "v": "Large" }, { "v": "Una" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Karta" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Mari" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Valtan" }, { "v": "English" }] },
+      {
+        "c": [
+          { "v": "Small" },
+          { "v": "Kazeros" },
+          { "v": "Portuguese/Brazilian " }
+        ]
+      },
+      { "c": [{ "v": "Medium" }, { "v": "Kadan" }, { "v": "English/German" }] },
+      { "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Trixion" }, { "v": "French" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Asta" }, { "v": "German" }] },
+      {
+        "c": [{ "v": "Medium" }, { "v": "Zinnervale" }, { "v": "Czech/Slovak" }]
+      },
+      {
+        "c": [{ "v": "Medium" }, { "v": "Zinnervale" }, { "v": "Portuguese" }]
+      },
+      { "c": [{ "v": "Medium" }, { "v": "Valtan" }, { "v": "English" }] },
+      { "c": [{ "v": "Large" }, { "v": "Asta" }, { "v": "German" }] },
+      { "c": [{ "v": "Small" }, { "v": "Asta" }, { "v": "German" }] },
+      { "c": [{ "v": "Small" }, { "v": "Kadan" }, { "v": "French" }] },
+      { "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Trixion" }, { "v": "Spanish" }] },
+      {
+        "c": [{ "v": "Small" }, { "v": "Trixion" }, { "v": "English/Spanish" }]
+      },
+      { "c": [{ "v": "Small" }, { "v": "Kadan" }, { "v": "English/German" }] },
+      { "c": [{ "v": "Small" }, { "v": "Mari" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Asta" }, { "v": "German" }] },
+      { "c": [{ "v": "Large" }, { "v": "Asta" }, { "v": "French" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Asta" }, { "v": "German" }] },
+      {
+        "c": [{ "v": "Small" }, { "v": "Kadan" }, { "v": "English/Romanian" }]
+      },
+      { "c": [{ "v": "Small" }, { "v": "Wei" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Asta" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Thirain" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Kadan" }, { "v": "English" }] },
+      { "c": [{ "v": "Large" }, { "v": "Azena" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Azena" }, { "v": "English" }] },
+      { "c": [{ "v": "Large" }, { "v": "Kazeros" }, { "v": "Portuguese" }] },
+      { "c": [{ "v": "Small" }, { "v": "Kadan" }, { "v": "English/Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Trixion" }, { "v": "French" }] },
+      { "c": [{ "v": "Small" }, { "v": "Neria" }, { "v": "Polish" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Valtan" }, { "v": "English" }] },
+      { "c": [{ "v": "Large" }, { "v": "Zinnervale" }, { "v": "Swedish" }] },
+      { "c": [{ "v": "Large" }, { "v": "Azena" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Wei" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Kadan" }, { "v": "English" }] },
+      { "c": [{ "v": "Large" }, { "v": "Asta" }, { "v": "French" }] },
+      { "c": [{ "v": "Large" }, { "v": "Neria" }, { "v": "Italian" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Zinnervale" }, { "v": "Finnish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Trixion" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Regulus" }, { "v": "English" }] },
+      { "c": [{ "v": "Large" }, { "v": "Trixion" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Large" }, { "v": "Wei" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Wei" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Wei" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Large" }, { "v": "Trixion" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Wei" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Large" }, { "v": "Wei" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Wei" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Wei" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Wei" }, { "v": "Spanish" }] },
+      {
+        "c": [
+          { "v": "Small" },
+          { "v": "Zinnervale" },
+          { "v": "Slovenian/English" }
+        ]
+      },
+      { "c": [{ "v": "Small" }, { "v": "Wei" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Large" }, { "v": "Azena" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Wei" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Wei" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Wei" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Zinnervale" }, { "v": "Danish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Regulus" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Kadan" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Kazeros" }, { "v": "Portuguese" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Zinnervale" }, { "v": "English" }] },
+      {
+        "c": [
+          { "v": "Small" },
+          { "v": "Zinnervale" },
+          { "v": "English/German" }
+        ]
+      },
+      { "c": [{ "v": "Medium" }, { "v": "Zinnervale" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Azena" }, { "v": "English " }] },
+      { "c": [{ "v": "Small" }, { "v": "Wei" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Kadan" }, { "v": "Greek" }] },
+      { "c": [{ "v": "Small" }, { "v": "Regulus" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Azena" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Kadan" }, { "v": "German" }] },
+      { "c": [{ "v": "Small" }, { "v": "Wei" }, { "v": "English/German" }] },
+      { "c": [{ "v": "Large" }, { "v": "Kadan" }, { "v": "Turkish" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Neria" }, { "v": "Italian" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Regulus" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Wei" }, { "v": "Spanish" }] },
+      {
+        "c": [
+          { "v": "Small" },
+          { "v": "Zinnervale" },
+          { "v": "English/German" }
+        ]
+      },
+      { "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Avesta" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Avesta" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Agaton" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Valtan" }, { "v": "English" }] },
+      { "c": [{ "v": "Large" }, { "v": "Wei" }, { "v": "English" }] },
+      {
+        "c": [
+          { "v": "Small" },
+          { "v": "Kadan" },
+          { "v": "English/Cantonese/Chinese" }
+        ]
+      },
+      { "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Agaton" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Large" }, { "v": "Regulus" }, { "v": "English" }] },
+      {
+        "c": [{ "v": "Medium" }, { "v": "Kadan" }, { "v": "Serbian/Croatian" }]
+      },
+      { "c": [{ "v": "Small" }, { "v": "Wei" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Kadan" }, { "v": "French" }] },
+      { "c": [{ "v": "Large" }, { "v": "Wei" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Mari" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Mari" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Regulus" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Azena" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Una" }, { "v": "English" }] },
+      {
+        "c": [
+          { "v": "Large" },
+          { "v": "Agaton" },
+          { "v": "English/Spanish/Portuguese" }
+        ]
+      },
+      { "c": [{ "v": "Small" }, { "v": "Avesta" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Azena" }, { "v": "English " }] },
+      {
+        "c": [{ "v": "Medium" }, { "v": "Regulus" }, { "v": "Spanish/English" }]
+      },
+      { "c": [{ "v": "Small" }, { "v": "Regulus" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Asta" }, { "v": "English/French" }] },
+      { "c": [{ "v": "Small" }, { "v": "Neria" }, { "v": "Polish" }] },
+      {
+        "c": [
+          { "v": "Large" },
+          { "v": "Kazeros" },
+          { "v": "Portuguese/Brazilian" }
+        ]
+      },
+      { "c": [{ "v": "Medium" }, { "v": "Regulus" }, { "v": "English" }] },
+      { "c": [{ "v": "Large" }, { "v": "Karta" }, { "v": "English" }] },
+      { "c": [{ "v": "Large" }, { "v": "Agaton" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Valtan" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Azena" }, { "v": "English/Spanish" }] },
+      {
+        "c": [
+          { "v": "Small" },
+          { "v": "Kazeros" },
+          { "v": "Portuguese/Brazilian" }
+        ]
+      },
+      { "c": [{ "v": "Small" }, { "v": "Azena" }, { "v": "English/Spanish" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Karta" }, { "v": "English" }] },
+      { "c": [{ "v": "Large" }, { "v": "Galatur" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Avesta" }, { "v": "English" }] },
+      { "c": [{ "v": "Large" }, { "v": "Zinnervale" }, { "v": "German" }] },
+      { "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "Finnish" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Neria" }, { "v": "Polish" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Kadan" }, { "v": "English/Balkan" }] },
+      { "c": [{ "v": "Large" }, { "v": "Kadan" }, { "v": "Turkish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Galatur" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Enviska" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Wei" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Wei" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Kadan" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Zinnervale" }, { "v": "Swedish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Kadan" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Neria" }, { "v": "Italian" }] },
+      {
+        "c": [{ "v": "Large" }, { "v": "Kadan" }, { "v": "English/Romanian" }]
+      },
+      { "c": [{ "v": "Large" }, { "v": "Kadan" }, { "v": "Slovenian" }] },
+      { "c": [{ "v": "Small" }, { "v": "Una" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Wei" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Wei" }, { "v": "Romanian" }] },
+      { "c": [{ "v": "Small" }, { "v": "Trixion" }, { "v": "French" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Asta" }, { "v": "German" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Zinnervale" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Una" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Kadan" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Asta" }, { "v": "German" }] },
+      { "c": [{ "v": "Small" }, { "v": "Regulus" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Valtan" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Trixion" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Trixion" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Kadan" }, { "v": "Turkish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Neria" }, { "v": "German" }] },
+      { "c": [{ "v": "Small" }, { "v": "Agaton" }, { "v": "Español" }] },
+      { "c": [{ "v": "Small" }, { "v": "Neria" }, { "v": "Italian" }] },
+      { "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "Finnish" }] },
+      { "c": [{ "v": "Large" }, { "v": "Kadan" }, { "v": "Czech/Slovak" }] },
+      { "c": [{ "v": "Small" }, { "v": "Asta" }, { "v": "German" }] },
+      { "c": [{ "v": "Small" }, { "v": "Regulus" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Agaton" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Trixion" }, { "v": "French" }] },
+      { "c": [{ "v": "Small" }, { "v": "Wei" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Una" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Zinnervale" }, { "v": "balkan" }] },
+      { "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Azena" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Neria" }, { "v": "Italian" }] },
+      { "c": [{ "v": "Small" }, { "v": "Neria" }, { "v": "Italian" }] },
+      { "c": [{ "v": "Large" }, { "v": "Neria" }, { "v": "Italian" }] },
+      { "c": [{ "v": "Small" }, { "v": "Neria" }, { "v": "Italian" }] },
+      { "c": [{ "v": "Small" }, { "v": "Karta" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Asta" }, { "v": "German" }] },
+      { "c": [{ "v": "Small" }, { "v": "Neria" }, { "v": "Italian" }] },
+      { "c": [{ "v": "Small" }, { "v": "Neria" }, { "v": "Italian" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Neria" }, { "v": "Italian" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Regulus" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Zinnervale" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Large" }, { "v": "Kadan" }, { "v": "Turkish" }] },
+      {
+        "c": [
+          { "v": "Large" },
+          { "v": "Azena" },
+          { "v": "English/Portuguese " }
+        ]
+      },
+      {
+        "c": [
+          { "v": "Medium" },
+          { "v": "Valtan" },
+          { "v": "Mandarin/Cantonese" }
+        ]
+      },
+      { "c": [{ "v": "Small" }, { "v": "Kadan" }, { "v": "English/Polish" }] },
+      {
+        "c": [{ "v": "Small" }, { "v": "Agaton" }, { "v": "English/Spanish" }]
+      },
+      { "c": [{ "v": "Small" }, { "v": "Kadan" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Kadan" }, { "v": "german/english" }] },
+      { "c": [{ "v": "Small" }, { "v": "Regulus" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Azena" }, { "v": "English/Spanish" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Mari" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Neria" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Zinnervale" }, { "v": "English" }] },
+      { "c": [{ "v": "Large" }, { "v": "Agaton" }, { "v": "Español" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Zinnervale" }, { "v": "English" }] },
+      {
+        "c": [
+          { "v": "Small" },
+          { "v": "Kazeros" },
+          { "v": "Portuguese/Brazilian " }
+        ]
+      },
+      { "c": [{ "v": "Small" }, { "v": "Regulus" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Neria" }, { "v": "Italian" }] },
+      { "c": [{ "v": "Small" }, { "v": "Una" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Regulus" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Zinnervale" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Kadan" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Regulus" }, { "v": "English" }] },
+      { "c": [{ "v": "Large" }, { "v": "Kazeros" }, { "v": "Spanish" }] },
+      {
+        "c": [{ "v": "Large" }, { "v": "Agaton" }, { "v": "English/Spanish" }]
+      },
+      { "c": [{ "v": "Small" }, { "v": "Una" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Wei" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Agaton" }, { "v": "Español" }] },
+      { "c": [{ "v": "Large" }, { "v": "Mari" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Karta" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Azena" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Mari" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Neria" }, { "v": "Italian" }] },
+      { "c": [{ "v": "Small" }, { "v": "Kazeros" }, { "v": "Portuguese" }] },
+      {
+        "c": [{ "v": "Small" }, { "v": "Regulus" }, { "v": "English/Tagalog" }]
+      },
+      { "c": [{ "v": "Large" }, { "v": "Trixion" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Mari" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Agaton" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Regulus" }, { "v": "English" }] },
+      {
+        "c": [
+          { "v": "Small" },
+          { "v": "Regulus" },
+          { "v": "Spanish / English" }
+        ]
+      },
+      { "c": [{ "v": "Large" }, { "v": "Ladon" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Azena" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Valtan" }, { "v": "English/OCE" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Una" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Avesta" }, { "v": "Korean" }] },
+      { "c": [{ "v": "Small" }, { "v": "Azena" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Una" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Asta" }, { "v": "German" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Kadan" }, { "v": "Polish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Regulus" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Calvasus" }, { "v": "French" }] },
+      { "c": [{ "v": "Small" }, { "v": "Kadan" }, { "v": "English" }] },
+      {
+        "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "English/Dutch" }]
+      },
+      { "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Kadan" }, { "v": "English/Italian" }] },
+      { "c": [{ "v": "Large" }, { "v": "Zinnervale" }, { "v": "Greek" }] },
+      { "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "Norwegian" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Kazeros" }, { "v": "Portuguese" }] },
+      { "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "Greek" }] },
+      { "c": [{ "v": "Small" }, { "v": "Asta" }, { "v": "German" }] },
+      { "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Calvasus" }, { "v": "French" }] },
+      { "c": [{ "v": "Small" }, { "v": "Wei" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Regulus" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Trixion" }, { "v": "Turkish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Asta" }, { "v": "German" }] },
+      { "c": [{ "v": "Small" }, { "v": "Kazeros" }, { "v": "Portuguese" }] },
+      { "c": [{ "v": "Small" }, { "v": "Karta" }, { "v": "English" }] },
+      {
+        "c": [
+          { "v": "Small" },
+          { "v": "Zinnervale" },
+          { "v": "English / Greek" }
+        ]
+      },
+      { "c": [{ "v": "Small" }, { "v": "Una" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Avesta" }, { "v": "English" }] },
+      { "c": [{ "v": "Large" }, { "v": "Kadan" }, { "v": "Danish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Wei" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Regulus" }, { "v": "English" }] },
+      {
+        "c": [
+          { "v": "Medium" },
+          { "v": "Zinnervale" },
+          { "v": "Portuguese/English" }
+        ]
+      },
+      { "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Neria" }, { "v": "Polish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Una" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Kazeros" }, { "v": "Portuguese" }] },
+      {
+        "c": [{ "v": "Medium" }, { "v": "Kadan" }, { "v": "English/Persian" }]
+      },
+      { "c": [{ "v": "Small" }, { "v": "Agaton" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Calvasus" }, { "v": "French" }] },
+      { "c": [{ "v": "Small" }, { "v": "Azena" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Kazeros" }, { "v": "Portuguese" }] },
+      { "c": [{ "v": "Small" }, { "v": "Agaton" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "English" }] },
+      { "c": [{ "v": "Large" }, { "v": "Thirain" }, { "v": "English" }] },
+      {
+        "c": [
+          { "v": "Medium" },
+          { "v": "Zinnervale" },
+          { "v": "Norwegian/English" }
+        ]
+      },
+      { "c": [{ "v": "Small" }, { "v": "Valtan" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Karta" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Wei" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Mari" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Neria" }, { "v": "Polish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "Finnish" }] },
+      { "c": [{ "v": "Large" }, { "v": "Slen" }, { "v": "Turkish" }] },
+      {
+        "c": [
+          { "v": "Large" },
+          { "v": "Kazeros" },
+          { "v": "Portuguese/Brazilian" }
+        ]
+      },
+      { "c": [{ "v": "Medium" }, { "v": "Valtan" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Kazeros" }, { "v": "Portuguese" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Zinnervale" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Valtan" }, { "v": "English" }] },
+      { "c": [{ "v": "Large" }, { "v": "Zinnervale" }, { "v": "Swedish" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Azena" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Mari" }, { "v": "English/Korean" }] },
+      { "c": [{ "v": "Small" }, { "v": "Kadan" }, { "v": "English" }] },
+      { "c": [{ "v": "Large" }, { "v": "Neria" }, { "v": "Hungarian" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Kadan" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Azena" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Una" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Kazeros" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Valtan" }, { "v": "English" }] },
+      {
+        "c": [
+          { "v": "Medium" },
+          { "v": "Valtan" },
+          { "v": "English (Primary) Filipino (Secondary)" }
+        ]
+      },
+      { "c": [{ "v": "Small" }, { "v": "Mari" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Agaton" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Una" }, { "v": "English" }] },
+      { "c": [{ "v": "Large" }, { "v": "Azena" }, { "v": "English" }] },
+      {
+        "c": [{ "v": "Medium" }, { "v": "Valtan" }, { "v": "English/Filipino" }]
+      },
+      {
+        "c": [
+          { "v": "Large" },
+          { "v": "Agaton" },
+          { "v": "English/Portuguese/Spanish" }
+        ]
+      },
+      { "c": [{ "v": "Large" }, { "v": "Kazeros" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Azena" }, { "v": "English" }] },
+      { "c": [{ "v": "Large" }, { "v": "Zinnervale" }, { "v": "English" }] },
+      {
+        "c": [{ "v": "Large" }, { "v": "Zinnervale" }, { "v": "Czech/Slovak" }]
+      },
+      { "c": [{ "v": "Small" }, { "v": "Neria" }, { "v": "Italian" }] },
+      { "c": [{ "v": "Small" }, { "v": "Asta" }, { "v": "German/Swiss" }] },
+      { "c": [{ "v": "Small" }, { "v": "Asta" }, { "v": "German" }] },
+      { "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "Finnish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Kazeros" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Kadan" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Mari" }, { "v": "English " }] },
+      { "c": [{ "v": "Small" }, { "v": "Trixion" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Valtan" }, { "v": "English" }] },
+      {
+        "c": [
+          { "v": "Small" },
+          { "v": "Zinnervale" },
+          { "v": "Balkan (Serb, Cro, MN, Bos)" }
+        ]
+      },
+      { "c": [{ "v": "Large" }, { "v": "Avesta" }, { "v": "French" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Kadan" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Agaton" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Wei" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Thirain" }, { "v": "Polish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Avesta" }, { "v": "English " }] },
+      { "c": [{ "v": "Small" }, { "v": "Wei" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Large" }, { "v": "Regulus" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Valtan" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Azena" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Kazeros" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Regulus" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Galatur" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Large" }, { "v": "Mari" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Trixion" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Kadan" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Calvasus" }, { "v": "French" }] },
+      {
+        "c": [
+          { "v": "Small" },
+          { "v": "Zinnervale" },
+          { "v": "English/German/Arab" }
+        ]
+      },
+      { "c": [{ "v": "Small" }, { "v": "Kazeros" }, { "v": "Portuguese" }] },
+      {
+        "c": [
+          { "v": "Medium" },
+          { "v": "Kazeros" },
+          { "v": "Português/Brasil" }
+        ]
+      },
+      { "c": [{ "v": "Medium" }, { "v": "Regulus" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Large" }, { "v": "Zinnervale" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Valtan" }, { "v": "English" }] },
+      {
+        "c": [{ "v": "Medium" }, { "v": "Zinnervale" }, { "v": "Czech/Slovak" }]
+      },
+      { "c": [{ "v": "Small" }, { "v": "Agaton" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Una" }, { "v": "English" }] },
+      {
+        "c": [{ "v": "Medium" }, { "v": "Zinnervale" }, { "v": "Czech/Slovak" }]
+      },
+      { "c": [{ "v": "Small" }, { "v": "Calvasus" }, { "v": "French" }] },
+      {
+        "c": [
+          { "v": "Medium" },
+          { "v": "Zinnervale" },
+          { "v": "Czech and Slovak" }
+        ]
+      },
+      { "c": [{ "v": "Small" }, { "v": "Asta" }, { "v": "German" }] },
+      { "c": [{ "v": "Small" }, { "v": "Trixion" }, { "v": "French" }] },
+      { "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "Portuguese" }] },
+      { "c": [{ "v": "Small" }, { "v": "Asta" }, { "v": "German" }] },
+      { "c": [{ "v": "Small" }, { "v": "Regulus" }, { "v": "Spanish" }] },
+      {
+        "c": [{ "v": "Medium" }, { "v": "Zinnervale" }, { "v": "Lithuanian " }]
+      },
+      { "c": [{ "v": "Small" }, { "v": "Kadan" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Mari" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Agaton" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Calvasus" }, { "v": "French" }] },
+      { "c": [{ "v": "Small" }, { "v": "Mari" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Azena" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Asta" }, { "v": "German" }] },
+      { "c": [{ "v": "Large" }, { "v": "Kazeros" }, { "v": "Portuguese" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Regulus" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Azena" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Una" }, { "v": "English" }] },
+      { "c": [{ "v": "Large" }, { "v": "Zinnervale" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Una" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Kadan" }, { "v": "Turkish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Wei" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Kadan" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Asta" }, { "v": "German" }] },
+      { "c": [{ "v": "Small" }, { "v": "Asta" }, { "v": "English/German" }] },
+      {
+        "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "English/Czech" }]
+      },
+      { "c": [{ "v": "Small" }, { "v": "Regulus" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Wei" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Azena" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Azena" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Regulus" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Regulus" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Mari" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Asta" }, { "v": "Turkish" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Azena" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Zinnervale" }, { "v": "English" }] },
+      { "c": [{ "v": "Large" }, { "v": "Agaton" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Mari" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Una" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Trixion" }, { "v": "French" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Azena" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Valtan" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Valtan" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Slen" }, { "v": "Swiss-German" }] },
+      {
+        "c": [
+          { "v": "Small" },
+          { "v": "Zinnervale" },
+          { "v": "English/Nordic" }
+        ]
+      },
+      { "c": [{ "v": "Small" }, { "v": "Kadan" }, { "v": "English" }] },
+      {
+        "c": [
+          { "v": "Medium" },
+          { "v": "Zinnervale" },
+          { "v": "English/Balkan" }
+        ]
+      },
+      { "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Kadan" }, { "v": "null" }] },
+      { "c": [{ "v": "Small" }, { "v": "Trixion" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Una" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Azena" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Zinnervale" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Wei" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Karta" }, { "v": "English" }] },
+      { "c": [{ "v": "Large" }, { "v": "Zinnervale" }, { "v": "Arabic" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Kadan" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Regulus" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Kadan" }, { "v": "Russian" }] },
+      {
+        "c": [{ "v": "Medium" }, { "v": "Avesta" }, { "v": "English/Korean" }]
+      },
+      {
+        "c": [
+          { "v": "Small" },
+          { "v": "Zinnervale" },
+          { "v": "English/Portuguese" }
+        ]
+      },
+      { "c": [{ "v": "Large" }, { "v": "Trixion" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Regulus" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Neria" }, { "v": "Polish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Azena" }, { "v": "English " }] },
+      { "c": [{ "v": "Small" }, { "v": "Regulus" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Trixion" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Thirain" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "Hungarian" }] },
+      { "c": [{ "v": "Small" }, { "v": "Asta" }, { "v": "German" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Asta" }, { "v": "German " }] },
+      { "c": [{ "v": "Medium" }, { "v": "Asta" }, { "v": "German" }] },
+      { "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "Finnish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Kadan" }, { "v": "Turkish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Kadan" }, { "v": "English" }] },
+      { "c": [{ "v": "Large" }, { "v": "Kazeros" }, { "v": "Portuguese" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Regulus" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Zinnervale" }, { "v": "Greek" }] },
+      {
+        "c": [
+          { "v": "Small" },
+          { "v": "Zinnervale" },
+          { "v": "English/Bulgarian" }
+        ]
+      },
+      { "c": [{ "v": "Small" }, { "v": "Asta" }, { "v": "Germany" }] },
+      {
+        "c": [
+          { "v": "Small" },
+          { "v": "Zinnervale" },
+          { "v": "English/Polish" }
+        ]
+      },
+      { "c": [{ "v": "Small" }, { "v": "Valtan" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Slen" }, { "v": "English/French" }] },
+      { "c": [{ "v": "Small" }, { "v": "Kazeros" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Neria" }, { "v": "Polish" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Asta" }, { "v": "German " }] },
+      { "c": [{ "v": "Small" }, { "v": "Azena" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Trixion" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Large" }, { "v": "Zinnervale" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Valtan" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Azena" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Neria" }, { "v": "Polish" }] },
+      { "c": [{ "v": "Large" }, { "v": "Zinnervale" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Regulus" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Regulus" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Regulus" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Avesta" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Regulus" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Large" }, { "v": "Asta" }, { "v": "English" }] },
+      { "c": [{ "v": "Large" }, { "v": "Regulus" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Avesta" }, { "v": "Korean" }] },
+      { "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "Portuguese" }] },
+      { "c": [{ "v": "Small" }, { "v": "Azena" }, { "v": "Korean" }] },
+      { "c": [{ "v": "Small" }, { "v": "Regulus" }, { "v": "English" }] },
+      {
+        "c": [{ "v": "Small" }, { "v": "Valtan" }, { "v": "English/Filipino" }]
+      },
+      {
+        "c": [
+          { "v": "Medium" },
+          { "v": "Valtan" },
+          { "v": "English/Vietnamese" }
+        ]
+      },
+      { "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "Portuguese" }] },
+      { "c": [{ "v": "Small" }, { "v": "Una" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Mari" }, { "v": "English" }] },
+      { "c": [{ "v": "Large" }, { "v": "Regulus" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Mari" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Regulus" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Asta" }, { "v": "German" }] },
+      { "c": [{ "v": "Small" }, { "v": "Regulus" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Asta" }, { "v": "German" }] },
+      { "c": [{ "v": "Small" }, { "v": "Valtan" }, { "v": "Engish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Thirain" }, { "v": "German" }] },
+      { "c": [{ "v": "Small" }, { "v": "Thirain" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "Portuguese" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Neria" }, { "v": "English/Polish" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Zinnervale" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "English" }] },
+      {
+        "c": [
+          { "v": "Small" },
+          { "v": "Kadan" },
+          { "v": "English/International" }
+        ]
+      },
+      { "c": [{ "v": "Medium" }, { "v": "Zinnervale" }, { "v": "English" }] },
+      {
+        "c": [
+          { "v": "Small" },
+          { "v": "Zinnervale" },
+          { "v": "English/German" }
+        ]
+      },
+      { "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Wei" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Trixion" }, { "v": "English/Dutch" }] },
+      { "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Enviska" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Wei" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Neria" }, { "v": "English/Italian" }] },
+      {
+        "c": [
+          { "v": "Small" },
+          { "v": "Zinnervale" },
+          { "v": "English/Croatian" }
+        ]
+      },
+      { "c": [{ "v": "Medium" }, { "v": "Slen" }, { "v": "German" }] },
+      { "c": [{ "v": "Small" }, { "v": "Kadan" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Kadan" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Enviska" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Wei" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Regulus" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Calvasus" }, { "v": "French" }] },
+      { "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "Finnish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Neria" }, { "v": "Polish" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Agaton" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Kazeros" }, { "v": "Portuguese" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Valtan" }, { "v": "English" }] },
+      { "c": [{ "v": "Large" }, { "v": "Avesta" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Wei" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Una" }, { "v": "English/French" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Una" }, { "v": "English " }] },
+      { "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Regulus" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Asta" }, { "v": "German" }] },
+      { "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Kadan" }, { "v": "Portuguese" }] },
+      { "c": [{ "v": "Small" }, { "v": "Kadan" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Mari" }, { "v": "Korean" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Trixion" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Una" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Regulus" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Karta" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Regulus" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Asta" }, { "v": "German" }] },
+      { "c": [{ "v": "Small" }, { "v": "Avesta" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Kazeros" }, { "v": "Portuguese" }] },
+      { "c": [{ "v": "Small" }, { "v": "Azena" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Agaton" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Agaton" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Mari" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Enviska" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Valtan" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "Spanish" }] },
+      {
+        "c": [
+          { "v": "Medium" },
+          { "v": "Zinnervale" },
+          { "v": "English/Turkish" }
+        ]
+      },
+      { "c": [{ "v": "Medium" }, { "v": "Asta" }, { "v": "English/German" }] },
+      { "c": [{ "v": "Small" }, { "v": "Wei" }, { "v": "Spanish" }] },
+      {
+        "c": [
+          { "v": "Small" },
+          { "v": "Zinnervale" },
+          { "v": "English/Swedish" }
+        ]
+      },
+      { "c": [{ "v": "Small" }, { "v": "Kadan" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Valtan" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Calvasus" }, { "v": "French" }] },
+      { "c": [{ "v": "Small" }, { "v": "Asta" }, { "v": "Greek" }] },
+      { "c": [{ "v": "Small" }, { "v": "Regulus" }, { "v": "English" }] },
+      {
+        "c": [{ "v": "Small" }, { "v": "Wei" }, { "v": "English/Portuguese" }]
+      },
+      { "c": [{ "v": "Large" }, { "v": "Karta" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Azena" }, { "v": "English" }] },
+      {
+        "c": [{ "v": "Small" }, { "v": "Agaton" }, { "v": "Spanish/Portugués" }]
+      },
+      { "c": [{ "v": "Small" }, { "v": "Regulus" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Agaton" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Trixion" }, { "v": "French" }] },
+      { "c": [{ "v": "Small" }, { "v": "Valtan" }, { "v": "English " }] },
+      { "c": [{ "v": "Small" }, { "v": "Avesta" }, { "v": "French" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Zinnervale" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Kadan" }, { "v": "Italian" }] },
+      {
+        "c": [
+          { "v": "Small" },
+          { "v": "Zinnervale" },
+          { "v": "English/Scandinavian" }
+        ]
+      },
+      {
+        "c": [{ "v": "Small" }, { "v": "Kadan" }, { "v": "English/Spannish" }]
+      },
+      { "c": [{ "v": "Small" }, { "v": "Una" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Regulus" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Zinnervale" }, { "v": "Polish" }] },
+      {
+        "c": [{ "v": "Medium" }, { "v": "Kadan" }, { "v": "English/Russian" }]
+      },
+      { "c": [{ "v": "Large" }, { "v": "Una" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Mari" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Thirain" }, { "v": "German" }] },
+      { "c": [{ "v": "Small" }, { "v": "Azena" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Zinnervale" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "English" }] },
+      { "c": [{ "v": "Large" }, { "v": "Zinnervale" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Kadan" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "Polish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Regulus" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Kadan" }, { "v": "English" }] },
+      {
+        "c": [
+          { "v": "Small" },
+          { "v": "Zinnervale" },
+          { "v": "English/German" }
+        ]
+      },
+      { "c": [{ "v": "Medium" }, { "v": "Karta" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Kadan" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Large" }, { "v": "Zinnervale" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Una" }, { "v": "English" }] },
+      {
+        "c": [{ "v": "Small" }, { "v": "Regulus" }, { "v": "English/Korean" }]
+      },
+      { "c": [{ "v": "Medium" }, { "v": "Ladon" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Una" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Avesta" }, { "v": "French" }] },
+      { "c": [{ "v": "Small" }, { "v": "Mari" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Mari" }, { "v": "English" }] },
+      {
+        "c": [{ "v": "Small" }, { "v": "Azena" }, { "v": "English/Mandarin" }]
+      },
+      {
+        "c": [{ "v": "Small" }, { "v": "Mari" }, { "v": "English/Vietnamese" }]
+      },
+      {
+        "c": [{ "v": "Small" }, { "v": "Karta" }, { "v": "English/Japanese" }]
+      },
+      { "c": [{ "v": "Small" }, { "v": "Azena" }, { "v": "Korean :)" }] },
+      { "c": [{ "v": "Small" }, { "v": "Azena" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Regulus" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Wei" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Zinnervale" }, { "v": "Spanish" }] },
+      {
+        "c": [{ "v": "Large" }, { "v": "Valtan" }, { "v": "English/Tagalog" }]
+      },
+      { "c": [{ "v": "Large" }, { "v": "Ladon" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Asta" }, { "v": "German" }] },
+      { "c": [{ "v": "Large" }, { "v": "Zinnervale" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Asta" }, { "v": "German" }] },
+      { "c": [{ "v": "Small" }, { "v": "Valtan" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Kadan" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "Spanish" }] },
+      {
+        "c": [
+          { "v": "Small" },
+          { "v": "Zinnervale" },
+          { "v": "English/German" }
+        ]
+      },
+      { "c": [{ "v": "Medium" }, { "v": "Wei" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Asta" }, { "v": "German" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Asta" }, { "v": "German" }] },
+      { "c": [{ "v": "Small" }, { "v": "Kadan" }, { "v": "English" }] },
+      {
+        "c": [
+          { "v": "Small" },
+          { "v": "Kazeros" },
+          { "v": "English/Portuguese" }
+        ]
+      },
+      {
+        "c": [{ "v": "Small" }, { "v": "Regulus" }, { "v": "English/Spanish" }]
+      },
+      { "c": [{ "v": "Small" }, { "v": "Mari" }, { "v": "English/Korean" }] },
+      { "c": [{ "v": "Small" }, { "v": "Una" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Regulus" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Asta" }, { "v": "German" }] },
+      { "c": [{ "v": "Small" }, { "v": "Una" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Wei" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Thirain" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Agaton" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Large" }, { "v": "Zinnervale" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Neria" }, { "v": "English/Italian" }] },
+      { "c": [{ "v": "Small" }, { "v": "Regulus" }, { "v": "English " }] },
+      { "c": [{ "v": "Small" }, { "v": "Asta" }, { "v": "English" }] },
+      {
+        "c": [
+          { "v": "Small" },
+          { "v": "Zinnervale" },
+          { "v": "English/German" }
+        ]
+      },
+      {
+        "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "English/Greek" }]
+      },
+      {
+        "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "English/Greek" }]
+      },
+      { "c": [{ "v": "Medium" }, { "v": "Zinnervale" }, { "v": "Greek" }] },
+      { "c": [{ "v": "Small" }, { "v": "Una" }, { "v": "English/Spanish" }] },
+      {
+        "c": [
+          { "v": "Small" },
+          { "v": "Zinnervale" },
+          { "v": "English/German" }
+        ]
+      },
+      { "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "Swedish" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Zinnervale" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Neria" }, { "v": "Polish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "English" }] },
+      {
+        "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "English/Greek" }]
+      },
+      { "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Asta" }, { "v": "German" }] },
+      { "c": [{ "v": "Large" }, { "v": "Avesta" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Trixion" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Regulus" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Azena" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Regulus" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Agaton" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Wei" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Kadan" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "Turkish" }] },
+      { "c": [{ "v": "Large" }, { "v": "Regulus" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Regulus" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Zinnervale" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Small" }, { "v": "Kazeros" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Valtan" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Azena" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Agaton" }, { "v": "Spanish" }] },
+      {
+        "c": [{ "v": "Small" }, { "v": "Regulus" }, { "v": "Spanish/ English" }]
+      },
+      { "c": [{ "v": "Small" }, { "v": "Mari" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Una" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Una" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Azena" }, { "v": "English" }] },
+      { "c": [{ "v": "Large" }, { "v": "Avesta" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Una" }, { "v": "Chinese" }] },
+      { "c": [{ "v": "Small" }, { "v": "Avesta" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Valtan" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Mari" }, { "v": "English" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Zinnervale" }, { "v": "Romanian" }] },
+      { "c": [{ "v": "Large" }, { "v": "Valtan" }, { "v": "Korean/English" }] },
+      {
+        "c": [
+          { "v": "Medium" },
+          { "v": "Zinnervale" },
+          { "v": "Serbian/Croatian/English" }
+        ]
+      },
+      {
+        "c": [
+          { "v": "Small" },
+          { "v": "Zinnervale" },
+          { "v": "German/English" }
+        ]
+      },
+      { "c": [{ "v": "Large" }, { "v": "Wei" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Large" }, { "v": "Azena" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Enviska" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Wei" }, { "v": "Spanish" }] },
+      { "c": [{ "v": "Medium" }, { "v": "Kadan" }, { "v": "Polish" }] },
+      { "c": [{ "v": "Large" }, { "v": "Thirain" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Zinnervale" }, { "v": "English" }] },
+      { "c": [{ "v": "Small" }, { "v": "Asta" }, { "v": "English/German" }] }
+    ],
+    "parsedNumHeaders": 0
+  }
+}

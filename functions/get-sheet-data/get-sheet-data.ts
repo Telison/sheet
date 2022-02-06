@@ -1,13 +1,24 @@
 import fetch from "cross-fetch";
 
-export async function handler(_event, _context) {
+type sheet = { table: table };
+type table = { rows: row[] };
+type row = { c: cell[] };
+type cell = { v: string | undefined };
+
+type server = { name: string; total: number; languages: language[] };
+type language = { name: string; count: number };
+
+export async function handler(event, _context) {
+  const region = event.queryStringParameters.region ?? "eu";
+  console.log(region);
+
   const apiUrl = getApiUrl();
 
   try {
     const response = await fetch(apiUrl);
     const responseText = await response.text();
-    const sheetTable = convertToSheetTable(responseText);
-    const servers = parse(sheetTable);
+    const sheet = convertToSheet(responseText);
+    const servers = parse(sheet, region);
     return {
       statusCode: 200,
       body: JSON.stringify(servers),
@@ -21,8 +32,6 @@ export async function handler(_event, _context) {
   }
 }
 
-type language = { name: string; count: number };
-type server = { name: string; total: number; languages: language[] };
 const callbackname = "googleSheetJsonParseCallback";
 
 function getApiUrl() {
@@ -37,8 +46,14 @@ function googleSheetJsonParseCallback(data: any) {
   return data;
 }
 
-function convertToSheetTable(data: string) {
+function convertToSheet(data: string) {
+  if (!data) {
+    throw "Invalid response from the Google API";
+  }
   const index = data.indexOf(callbackname);
+  if (index < 0 || data.length < callbackname.length) {
+    throw "Invalid response from the Google API";
+  }
   const functionCall = data.slice(index);
   return eval(functionCall);
 }
@@ -66,108 +81,56 @@ function normalizeName(name: string): string {
   return name;
 }
 
-function parseLanguage(languageText: string): string[] {
-  languageText = normalizeName(languageText);
-  if (!languageText) {
-    return [];
-  }
-
-  languageText = translateLanugageName(languageText);
-
-  const languages = languageText.split("/");
-
-  return languages.map((l) => translateLanugageName(l)).filter((l) => !!l);
-}
-
-const serboCroatian = "Serbo-Croatian";
-const czechSlovak = "Czech-Slovak";
-const german = "German";
-const turkish = "Turkish";
-
-const languageTranslations = {
-  ["Czech/Slovak"]: czechSlovak,
-  ["Czech and Slovak"]: czechSlovak,
-  ["Czech"]: czechSlovak,
-  ["Croatian/Serbian/Bosnian/Slovenian"]: serboCroatian,
-  ["Croatian"]: serboCroatian,
-  ["Serbian/Croatian"]: serboCroatian,
-  ["Balkan (Serb, Cro, MN, Bos)"]: serboCroatian,
-  ["Balkan"]: serboCroatian,
-  ["Serbian"]: serboCroatian,
-  ["Multicultural"]: "International",
-  ["SwissGerman"]: german,
-  ["Swiss-German"]: german,
-  ["Deutsch"]: german,
-  ["Germany"]: german,
-  ["Streamer (Turkish)"]: turkish,
-  ["Turkish (Streamer)"]: turkish,
-  ["Mostly Korean"]: "Korean",
-  ["Français"]: "French",
-  ["Arab"]: "Arabic",
-  ["Spannish"]: "Spanish",
-  ["Scandinavian"]: "Nordic",
-};
-
-function translateLanugageName(l: string) {
-  l = normalizeName(l);
-
-  return languageTranslations[l] ?? l;
-}
-
-function parse(sheetTable: any): server[] {
+function parse(sheet: sheet, region: string): server[] {
   const servers: server[] = [];
 
-  for (const row of sheetTable.table.rows) {
-    if (!row.c || !row.c || row.c.length < 1) {
+  if (!sheet?.table?.rows) {
+    return servers;
+  }
+
+  for (const row of sheet.table.rows) {
+    if (!row.c || row.c.length < 3) {
       continue;
     }
 
-    if (!row.c[1]) {
-      continue;
-    }
-
-    const serverName = normalizeName(row.c[1].v);
+    const serverName = parseServerName(row);
     if (!serverName) {
       continue;
     }
 
-    if (!isEuServer(serverName)) {
+    if (
+      (region == "eu" && !isEuServer(serverName)) ||
+      (region == "na" && isEuServer(serverName))
+    ) {
       continue;
     }
 
-    try {
-      if (row.c[0]) {
-        const sizeName = row.c[0].v;
-        const size = sizeName == "Small" ? 1 : sizeName == "Medium" ? 2 : 3;
-        const rawLanguageName = normalizeName(row.c[2].v);
+    const size = parseGuildSize(row);
+    const languageNames = parseLanguage(row);
 
-        if (rawLanguageName !== "Null") {
-          let server = servers.find((s) => s.name == serverName);
+    if (languageNames.length == 0) {
+      continue;
+    }
 
-          if (!server) {
-            server = { name: serverName, total: 0, languages: [] };
-            servers.push(server);
-          }
+    let server = servers.find((s) => s.name == serverName);
 
-          const languageNames = parseLanguage(rawLanguageName);
+    if (!server) {
+      server = { name: serverName, total: 0, languages: [] };
+      servers.push(server);
+    }
 
-          const count = size / languageNames.length;
+    const count = size / languageNames.length;
 
-          for (const languageName of languageNames) {
-            let language = server.languages.find((l) => l.name == languageName);
+    for (const languageName of languageNames) {
+      let language = server.languages.find((l) => l.name == languageName);
 
-            if (!language) {
-              language = { name: languageName, count: 0 };
-              server.languages.push(language);
-            }
-
-            language.count += count;
-            server.total += count;
-          }
-        }
+      if (!language) {
+        language = { name: languageName, count: 0 };
+        server.languages.push(language);
       }
-    } catch (e) {
-      console.log(e);
+
+      language.count += count;
+      server.total += count;
     }
   }
 
@@ -187,4 +150,93 @@ function parse(sheetTable: any): server[] {
   }
 
   return servers.sort((a, b) => b.total - a.total);
+}
+
+function parseServerName(row: row): string | undefined {
+  if (!row.c || row.c.length < 2 || !row.c[1].v) {
+    return undefined;
+  }
+
+  const rawServerName = row.c[1].v;
+  return normalizeName(rawServerName);
+}
+
+function parseGuildSize(row: row): number | undefined {
+  if (!row.c || row.c.length < 1 || !row.c[0].v) {
+    return undefined;
+  }
+
+  const sizeName = row.c[0].v;
+  const size = sizeName == "Large" ? 3 : sizeName == "Medium" ? 2 : 1;
+
+  return size;
+}
+
+function parseLanguage(row: row): string[] {
+  if (!row.c || row.c.length < 3 || !row.c[2].v) {
+    return undefined;
+  }
+  const rawLanguageName = normalizeName(row.c[2].v);
+
+  if (!rawLanguageName || rawLanguageName == "Null") {
+    return [];
+  }
+
+  var languageText = normalizeName(rawLanguageName);
+  if (!languageText) {
+    return [];
+  }
+
+  languageText = translateLanguageName(languageText);
+
+  const languages = languageText.split("/");
+
+  return languages.map((l) => translateLanguageName(l)).filter((l) => !!l);
+}
+
+const serboCroatian = "Serbo-Croatian";
+const czechSlovak = "Czech-Slovak";
+const german = "German";
+const turkish = "Turkish";
+const portuguese = "Portuguese";
+const spanish = "Spanish";
+const english = "English";
+
+const languageTranslations = {
+  ["Czech/Slovak"]: czechSlovak,
+  ["Czech and Slovak"]: czechSlovak,
+  ["Czech"]: czechSlovak,
+  ["Croatian/Serbian/Bosnian/Slovenian"]: serboCroatian,
+  ["Croatian"]: serboCroatian,
+  ["Serbian/Croatian"]: serboCroatian,
+  ["Balkan (Serb, Cro, MN, Bos)"]: serboCroatian,
+  ["Balkan"]: serboCroatian,
+  ["Serbian"]: serboCroatian,
+  ["Multicultural"]: "International",
+  ["SwissGerman"]: german,
+  ["Swiss-German"]: german,
+  ["Deutsch"]: german,
+  ["Germany"]: german,
+  ["Streamer (Turkish)"]: turkish,
+  ["Turkish (Streamer)"]: turkish,
+  ["Mostly Korean"]: "Korean",
+  ["Korean :)"]: "Korean",
+  ["Français"]: "French",
+  ["Arab"]: "Arabic",
+  ["Spannish"]: spanish,
+  ["Scandinavian"]: "Nordic",
+  ["English (Primary) Filipino (Secondary)"]: "English/Filipino",
+  ["Português"]: portuguese,
+  ["Portugués"]: portuguese,
+  ["Brasil"]: portuguese,
+  ["Brazilian"]: portuguese,
+  ["Español"]: spanish,
+  ["English Only"]: english,
+  ["Engish"]: english,
+};
+
+function translateLanguageName(l: string): string {
+  l = normalizeName(l);
+
+  return languageTranslations[l] ?? l;
 }
