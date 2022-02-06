@@ -11,7 +11,10 @@
     <link rel="stylesheet" href="styles.css" />
 
     <script>
-      const functionUrl = "/.netlify/functions/get-sheet-data";
+      const isNa = window.location.search.includes("region=na");
+
+      const region = isNa ? "region=na" : "region=eu";
+      const functionUrl = `/.netlify/functions/get-sheet-data?${region}`;
 
       fetch(functionUrl)
         .then((response) => response.json())
@@ -19,6 +22,9 @@
         .then((html) => {
           document.querySelector("#content").innerHTML = html;
           document.querySelector("#note").classList.remove("hidden");
+          if (isNa) {
+            document.querySelector("#header").innerHTML = "Lost Ark NA Servers";
+          }
         })
         .catch((error) => displayError(error));
 
@@ -61,7 +67,7 @@
   </head>
 
   <body>
-    <h1>Lost Ark European Servers</h1>
+    <h1 id="header">Lost Ark European Servers</h1>
     <h2>Registered Guild Languages</h2>
     <div id="content"><i>Loading data...</i></div>
     <div id="error"></div>
