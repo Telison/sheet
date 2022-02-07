@@ -201,6 +201,7 @@ const turkish = "Turkish";
 const portuguese = "Portuguese";
 const spanish = "Spanish";
 const english = "English";
+const french = "French";
 
 const languageTranslations = {
   ["Czech/Slovak"]: czechSlovak,
@@ -221,7 +222,9 @@ const languageTranslations = {
   ["Turkish (Streamer)"]: turkish,
   ["Mostly Korean"]: "Korean",
   ["Korean :)"]: "Korean",
-  ["Français"]: "French",
+  ["Français"]: french,
+  ["French Fr"]: french,
+  ["Francaise"]: french,
   ["Arab"]: "Arabic",
   ["Spannish"]: spanish,
   ["Scandinavian"]: "Nordic",
@@ -233,6 +236,7 @@ const languageTranslations = {
   ["Español"]: spanish,
   ["English Only"]: english,
   ["Engish"]: english,
+  ["EngIish"]: english,
 };
 
 function translateLanguageName(l: string): string {
